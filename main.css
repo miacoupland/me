@@ -50,13 +50,13 @@ Made with tutorial by script-tutorials.com*/
 }
 
 .stars {
-    background: #000 url(images/stars.png) repeat top center;
+    background: #000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
     z-index: 0;
 }
 
 .twinkling {
     z-index: 1;
-    background: transparent url(images/twinkling.png) repeat top center;
+    background: transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
     -moz-animation:move-twinkle-back 200s linear infinite;
     -ms-animation:move-twinkle-back 200s linear infinite;
     -o-animation:move-twinkle-back 200s linear infinite;
@@ -65,7 +65,7 @@ Made with tutorial by script-tutorials.com*/
 }
 
 .clouds {
-    background: transparent url(images/clouds.png) repeat top center;
+    background: transparent url((http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top center;
     z-index: 3;
     -moz-animation: move-clouds-back 200s linear infinite;
     -ms-animation: move-clouds-back 200s linear infinite;
