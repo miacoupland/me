@@ -13,13 +13,13 @@
 }
 
 .stars {
-    background: #9ecee0 url(resources/stars.png) repeat top center;
+    background: #9ecee0 url(Images/stars.png) repeat top center;
     z-index: -3;
 }
 
 .twinkling {
     z-index: -2;
-    background: transparent url(resources/twinkling.png) repeat top center;
+    background: transparent url(Images/twinkling.png) repeat top center;
     -moz-animation: move-twinkle-back 200s linear infinite;
     -ms-animation: move-twinkle-back 200s linear infinite;
     -o-animation: move-twinkle-back 200s linear infinite;
@@ -28,7 +28,7 @@
 }
 
 .clouds {
-    background: transparent url(resources/clouds4.png) repeat top center;
+    background: transparent url(Images/clouds4.png) repeat top center;
     z-index: -1;
     -moz-animation: move-clouds-back 200s linear infinite;
     -ms-animation: move-clouds-back 200s linear infinite;
