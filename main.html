@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-UK">
+
+<head>
+    <title>Mia Coupland</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto&family=Roboto+Mono&display=swap');
+    </style>
+    <link rel="stylesheet" href="base.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="navbar">
+            <a href="javascript:void(0);" class="icon" onclick="showHamburger()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="nav">
+                <li class="navlink" class="lang"><a href="#about">about</a></li>
+                <li class="navlink" class="lang"><a href="#mywork">my work</a></li>
+                <li class="navlink" class="lang"><a href="#contact">contact</a></li>
+                <li class="navlink" class="lang"><a href="article.html">blog</a></li>
+                <select id="langSelector">
+                    <option value="en" onclick="toggleLanguage('English')">english</option>
+                    <option value="eo" onclick="toggleLanguage('Esperanto')">esperanto</option>"
+                </select>
+            </ul>
+            <h1>Mia Coupland</h1>
+        </div>
+        <div id="intro">
+            <div class="stars"></div>
+            <div class="lights"></div>
+            <div class="clouds"></div>
+        </div>
+        <div id="about">
+            <h2>About</h2>
+            <p>My name is Mia Coupland and I am a junior software developer based in Newcastle Upon-Tyne. I am currently undertaking a Masters in Computer Science and have a background in history. I am a cultural historian who studied my undergraduate degree
+                at the University of Manchester and I am interested in merging the two fields of history and computer science together. I would like to use development for humanitarian or accessibility purposes.
+            </p>
+            <p>I have specialised in the history of China's one-child policy and the effects of international adoption, however I have always wanted to pursue software development and only recently received the opportunity. I am hoping to use my existing
+                knowledge in this field to build my final dissertation project.
+            </p>
+            <p>I have a wide range of experience from fraud prevention to IT and my current role is in respeaking/captioning for the deaf, hard of hearing, and foreign language speakers. As you can see, I love to learn new things and try an array of different
+                experiences. Online accessibility is greatly important to me and I would like to carry over what I have learned from my current job into a future role, making the internet more accessible.
+            </p>
+            <p>For more information about my work experience, please click <a href="http://www.linkedin.com/in/mia-coupland">here</a> to view my LinkedIn profile.</p>
+        </div>
+        <div id="mywork">
+            <h2>My Work</h2>
+            <p>For a deeper look into my coding projects, please click <a href="http://www.github.com/miacoupland">here</a> to view my Github profile.</p>
+        </div>
+        <div id="contact">
+            <h2>Contact</h2>
+            <p>You can contact me using the form below, or message me on <a href="http://www.linkedin.com/in/mia-coupland">LinkedIn!</a></p>
+            <form id="form" action="mailto:miacoupland@mail.com" method="GET" enctype="text/plain" target="_blank">
+                <label for="name">full name:</label>
+                <input name="name" type="text" placeholder="your name..." pattern=[A-Z\sa-z]{3,20} required /><br>
+                <label for="subject">subject:</label>
+                <input name="subject" type="text" placeholder="subject of your message..." pattern=[A-Z\sa-z]{3,20} required /><br>
+                <label for="body">message:</label>
+                <textarea id="body" name="body" placeholder="your message..." required></textarea>
+                <br><input id="send" type="submit" value="send">
+            </form>
+        </div>
+        <div id="blog">
+            <h2>Blog</h2>
+            <p>Click <a href="article.html">here</a> for more blog posts!</p>
+        </div>
+    </div>
+    <div id="footer">
+        <ul>
+            <li><i class='fab fa-github' style='font-size:24px'></i><a href="http://www.github.com/miacoupland">
+                    Github</a></li>
+            <li><i class='fab fa-linkedin' style='font-size:24px'></i><a href="http://www.linkedin.com/in/mia-coupland">
+                    LinkedIn</a></li>
+        </ul>
+        <!--<a href="sitemap.html">Sitemap</a>-->
+        <p>The colour of the clouds and sky in the header change depending on the time of day that you view my website.</p>
+        <br>
+        <p>Last modified: 2020-12-28 Mia Coupland</p>
+    </div>
+    <!-------- THE BELOW IS THE DAY AND NIGHT CYCLE ---->
+    <script>
+        function getStyleSheet() {
+            var currentTime = new Date().getHours();
+            if (0 <= currentTime && currentTime < 5) {
+                document.write("<link rel='stylesheet' href='nighttime.css' type='text/css'>");
+            }
+            if (5 <= currentTime && currentTime < 16) {
+                document.write("<link rel='stylesheet' href='morning.css' type='text/css'>");
+            }
+            if (16 <= currentTime && currentTime < 19) {
+                document.write("<link rel='stylesheet' href='afternoon.css' type='text/css'>");
+            }
+            if (19 <= currentTime && currentTime <= 24) {
+                document.write("<link rel='stylesheet' href='afternoon.css' type='text/css'>");
+            }
+        }
+        getStyleSheet();
+    </script>
+</body>
+<script src="language/changeLang.js"></script>
+<script src="functions.js"></script>
+
+</html>

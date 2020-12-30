@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    color: #FFF;
+    text-decoration: none;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-size: 14pt;
+    font-family: 'Roboto Mono';
+    color: #FFF;
+    background-color: #000;
+    z-index: -4;
+}
+
+p,
+h1,
+h2,
+h3,
+figure,
+ul,
+li,
+form,
+blockquote,
+time {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+h1,
+h2,
+h3,
+ul {
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 14px;
+}
+
+p a {
+    color: #FFBBDD;
+}
+
+time {
+    font-size: 14px;
+}
+
+#navbar {
+    background-color: transparent;
+    height: 8%;
+    background-position: center top;
+}
+
+h1 {
+    color: #fff;
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: linear-gradient(to right, #f1e88e 10%, #FFBBDD 50%, rgb(228, 114, 114) 60%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkkit-text-fill-color: transparent;
+    animation: textclip 1.5s linear infinite;
+    display: inline-block;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+.navlink,
+.langnav,
+select,
+ul {
+    list-style-type: none;
+    padding: 2%;
+    margin: 0;
+    bottom: 0;
+    right: 0;
+    font-weight: bold;
+}
+
+#langSelector {
+    min-width: 100%;
+    color: #FFF;
+    background-color: #000;
+    border: solid 2px;
+    max-height: 10%;
+}
+
+#langSelector:hover {
+    color: #FFBBDD;
+    border-color: #FFF;
+}
+
+.navlink:hover a,
+.langSelector:hover a {
+    color: #FFBBDD;
+}
+
+#nav {
+    overflow: hidden;
+    position: absolute;
+    right: 2%;
+    top: 5%;
+    flex-direction: column;
+    padding-left: 0;
+    margin: 0;
+    max-width: 600px;
+    text-align: right;
+}
+
+.icon {
+    visibility: hidden;
+}
+
+#about,
+#mywork,
+#contact,
+#blog,
+#footer {
+    margin-top: 30%;
+    padding: 3%;
+    background-color: #000;
+}
+
+#intro {
+    width: 100%;
+    height: 100%;
+}
+
+#about {}
+
+#mywork {}
+
+#blog {
+    margin-bottom: 1%;
+}
+
+#contact {}
+
+article {
+    margin-top: 10%;
+    margin-bottom: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
+    border: solid 2px white;
+    padding: 2%;
+}
+
+form {
+    margin-top: 2%;
+    width: 80%;
+}
+
+#send {
+    padding: 5px;
+}
+
+label,
+input {
+    display: inline-block;
+}
+
+label {
+    width: 30%;
+}
+
+input[type=text],
+#country,
+textarea {
+    width: 90%;
+    height: 5%;
+    padding: 1%;
+    border: 1px solid #FFBBDD;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    resize: vertical;
+    color: #FFF;
+    background-color: #000;
+}
+
+input[type=submit] {
+    background-color: #000;
+    color: #FFF;
+    font-size: 16px;
+    border: solid 2px #FFF;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #FFBBDD;
+}
+
+#pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#pagination a {
+    text-align: center;
+    padding: 2%;
+}
+
+#footer {
+    font-size: 12px;
+    text-align: center;
+    position: relative;
+    background-color: #222222;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+}
+
+#footer ul {
+    text-align: left;
+}
+
+@keyframes move-twinkle-back {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+@-webkit-keyframes move-twinkle-back {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+@-moz-keyframes move-twinkle-back {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+@-ms-keyframes move-twinkle-back {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+@keyframes move-clouds-back {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -10000px 0;
+    }
+}
+
+@-webkit-keyframes move-clouds-back {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -10000px 0;
+    }
+}
+
+@-moz-keyframes move-clouds-back {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -10000px 0;
+    }
+}
+
+@-ms-keyframes move-clouds-back {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -10000px 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #about {
+        margin-top: 100%;
+    }
+    #nav {
+        overflow: hidden;
+        position: absolute;
+        right: 2%;
+        top: 10%;
+        display: none;
+        flex-direction: column;
+        padding-left: 0;
+        margin: 0;
+        max-width: 600px;
+    }
+    .navlink,
+    #langSelector {
+        text-align: right;
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    #langSelector {
+        font-size: 12px;
+        margin-left: 0%;
+    }
+    .icon {
+        visibility: visible;
+        position: relative;
+        left: 95%;
+        top: 1%;
+    }
+}
+
+
+/* The below is how to make the background twinkling effect and clouds.
+
+    Made with tutorial by script-tutorials.com */
+
+
+/* END STARRY SKY CODE */
