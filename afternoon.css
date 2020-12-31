@@ -12,6 +12,10 @@
     display: block;
 }
 
+
+/* The below is how to make the background twinkling effect and clouds.
+    Made with tutorial by script-tutorials.com */
+
 .stars {
     background: #22363d;
     z-index: -3;

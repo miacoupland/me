@@ -71,6 +71,18 @@
         <div id="blog">
             <h2>Blog</h2>
             <p>Click <a href="article.html">here</a> for more blog posts!</p>
+            <article>
+                <h3>Title</h3>
+                <div class="postmeta">
+                    <time datetime="">December 29th 2020</time>
+                </div>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                <br>
+                <blockquote>Quotable quote</blockquote><br>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            </article>
         </div>
     </div>
     <div id="footer">
@@ -80,7 +92,6 @@
             <li><i class='fab fa-linkedin' style='font-size:24px'></i><a href="http://www.linkedin.com/in/mia-coupland">
                     LinkedIn</a></li>
         </ul>
-        <!--<a href="sitemap.html">Sitemap</a>-->
         <p>The colour of the clouds and sky in the header change depending on the time of day that you view my website.</p>
         <br>
         <p>Last modified: 2020-12-28 Mia Coupland</p>
@@ -99,7 +110,7 @@
                 document.write("<link rel='stylesheet' href='afternoon.css' type='text/css'>");
             }
             if (19 <= currentTime && currentTime <= 24) {
-                document.write("<link rel='stylesheet' href='afternoon.css' type='text/css'>");
+                document.write("<link rel='stylesheet' href='nighttime.css' type='text/css'>");
             }
         }
         getStyleSheet();

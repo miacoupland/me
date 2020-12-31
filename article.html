@@ -12,7 +12,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto&family=Roboto+Mono&display=swap');
     </style>
-    <link rel="stylesheet" href="desktop.css">
+    <link rel="stylesheet" href="base.css">
 </head>
 
 <body>
@@ -72,14 +72,14 @@
         </div>
     </div>
     <div id="footer">
-        <!--Insert language and/or region picker-->
         <ul>
             <li><i class='fab fa-github' style='font-size:24px'></i><a href="http://www.github.com/miacoupland">
                     Github</a></li>
             <li><i class='fab fa-linkedin' style='font-size:24px'></i><a href="http://www.linkedin.com/in/mia-coupland">
                     LinkedIn</a></li>
         </ul>
-        <!--<a href="sitemap.html">Sitemap</a>-->
+        <p>The colour of the clouds and sky in the header change depending on the time of day that you view my website.</p>
+        <br>
         <p>Last modified: 2020-12-28 Mia Coupland</p>
     </div>
     <!-------- THE BELOW IS THE DAY AND NIGHT CYCLE ---->
@@ -87,19 +87,16 @@
         function getStyleSheet() {
             var currentTime = new Date().getHours();
             if (0 <= currentTime && currentTime < 5) {
-                document.write("<link rel='stylesheet' href='desktop.css' type='text/css'>");
+                document.write("<link rel='stylesheet' href='nighttime.css' type='text/css'>");
             }
-            if (5 <= currentTime && currentTime < 11) {
-                document.write("<link rel='stylesheet' href='desktop.css' type='text/css'>");
+            if (5 <= currentTime && currentTime < 16) {
+                document.write("<link rel='stylesheet' href='morning.css' type='text/css'>");
             }
-            if (11 <= currentTime && currentTime < 16) {
-                document.write("<link rel='stylesheet' href='desktop.css' type='text/css'>");
+            if (16 <= currentTime && currentTime < 19) {
+                document.write("<link rel='stylesheet' href='afternoon.css' type='text/css'>");
             }
-            if (16 <= currentTime && currentTime < 22) {
-                document.write("<link rel='stylesheet' href='desktop.css' type='text/css'>");
-            }
-            if (22 <= currentTime && currentTime <= 24) {
-                document.write("<link rel='stylesheet' href='desktop.css' type='text/css'>");
+            if (19 <= currentTime && currentTime <= 24) {
+                document.write("<link rel='stylesheet' href='nighttime.css' type='text/css'>");
             }
         }
         getStyleSheet();

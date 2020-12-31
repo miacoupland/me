@@ -51,10 +51,6 @@ p a {
     color: #FFBBDD;
 }
 
-time {
-    font-size: 14px;
-}
-
 #navbar {
     background-color: transparent;
     height: 8%;
@@ -134,9 +130,8 @@ ul {
 #about,
 #mywork,
 #contact,
-#blog,
-#footer {
-    margin-top: 30%;
+#blog {
+    margin-top: 20%;
     padding: 3%;
     background-color: #000;
 }
@@ -146,23 +141,8 @@ ul {
     height: 100%;
 }
 
-#about {}
-
-#mywork {}
-
 #blog {
     margin-bottom: 1%;
-}
-
-#contact {}
-
-article {
-    margin-top: 10%;
-    margin-bottom: 20%;
-    margin-left: 15%;
-    margin-right: 15%;
-    border: solid 2px white;
-    padding: 2%;
 }
 
 form {
@@ -211,6 +191,15 @@ input[type=submit]:hover {
     background-color: #FFBBDD;
 }
 
+article {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    border: solid 2px white;
+    padding: 2%;
+}
+
 #pagination {
     display: flex;
     flex-direction: row;
@@ -230,11 +219,17 @@ input[type=submit]:hover {
     right: 0px;
     left: 0px;
     bottom: 0px;
+    margin-top: 5%;
+    padding: 1%;
 }
 
 #footer ul {
     text-align: left;
 }
+
+
+/* The below is how to make the background twinkling effect and clouds.
+    Made with tutorial by script-tutorials.com */
 
 @keyframes move-twinkle-back {
     from {
@@ -316,9 +311,8 @@ input[type=submit]:hover {
         overflow: hidden;
         position: absolute;
         right: 2%;
-        top: 10%;
+        top: 6%;
         display: none;
-        flex-direction: column;
         padding-left: 0;
         margin: 0;
         max-width: 600px;
@@ -342,11 +336,3 @@ input[type=submit]:hover {
         top: 1%;
     }
 }
-
-
-/* The below is how to make the background twinkling effect and clouds.
-
-    Made with tutorial by script-tutorials.com */
-
-
-/* END STARRY SKY CODE */
