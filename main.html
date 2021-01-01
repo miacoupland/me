@@ -22,13 +22,13 @@
                 <i class="fa fa-bars"></i>
             </a>
             <ul id="nav">
-                <li class="navlink" class="lang"><a href="#about">about</a></li>
-                <li class="navlink" class="lang"><a href="#mywork">my work</a></li>
-                <li class="navlink" class="lang"><a href="#contact">contact</a></li>
-                <li class="navlink" class="lang"><a href="article.html">blog</a></li>
+                <li class="navlink"><a href="#about" class="en-UK">about</a><a href="#about" class="eo">pri mi</a></li>
+                <li class="navlink"><a href="#mywork" class="en-UK">my work</a><a href="#about" class="eo">mia laboro</a></li>
+                <li class="navlink"><a href="#contact" class="en-UK">contact</a><a href="#contact" class="eo">kontacto</a></li>
+                <li class="navlink"><a href="article.html" class="en-UK">blog</a><a href="article.html" class="eo">blogo</a></li>
                 <select id="langSelector">
-                    <option value="en" onclick="toggleLanguage('English')">english</option>
-                    <option value="eo" onclick="toggleLanguage('Esperanto')">esperanto</option>"
+                    <option value="en-UK" onclick="toggleLanguage('en-UK')">english</option>
+                    <option value="eo" onclick="toggleLanguage('eo')">esperanto</option>"
                 </select>
             </ul>
             <h1>Mia Coupland</h1>
@@ -39,24 +39,54 @@
             <div class="clouds"></div>
         </div>
         <div id="about">
-            <h2>About</h2>
-            <p>My name is Mia Coupland and I am a junior software developer based in Newcastle Upon-Tyne. I am currently undertaking a Masters in Computer Science and have a background in history. I am a cultural historian who studied my undergraduate degree
-                at the University of Manchester and I am interested in merging the two fields of history and computer science together. I would like to use development for humanitarian or accessibility purposes.
+            <h2 class="en-UK">About</h2>
+            <h2 class="eo">Pri Mi</h2>
+            <p lang="en-UK">My name is Mia Coupland and I am a junior software developer based in Newcastle Upon-Tyne. I am currently undertaking a conversion Masters in Computer Science and have a background in history. I am a cultural historian who studied my undergraduate
+                degree at the University of Manchester and I am interested in merging the two fields of history and computer science together. I would like to use development for humanitarian or accessibility purposes.
             </p>
-            <p>I have specialised in the history of China's one-child policy and the effects of international adoption, however I have always wanted to pursue software development and only recently received the opportunity. I am hoping to use my existing
+            <p class="en-UK">I have specialised in the history of China's one-child policy and the effects of international adoption, however I have always wanted to pursue software development and only recently received the opportunity. I am hoping to use my existing
                 knowledge in this field to build my final dissertation project.
             </p>
-            <p>I have a wide range of experience from fraud prevention to IT and my current role is in respeaking/captioning for the deaf, hard of hearing, and foreign language speakers. As you can see, I love to learn new things and try an array of different
+            <p class="en-UK">I have a wide range of experience from fraud prevention to IT and my current role is in respeaking/captioning for the deaf, hard of hearing, and foreign language speakers. As you can see, I love to learn new things and try an array of different
                 experiences. Online accessibility is greatly important to me and I would like to carry over what I have learned from my current job into a future role, making the internet more accessible.
             </p>
             <p>For more information about my work experience, please click <a href="http://www.linkedin.com/in/mia-coupland">here</a> to view my LinkedIn profile.</p>
         </div>
         <div id="mywork">
-            <h2>My Work</h2>
-            <p>For a deeper look into my coding projects, please click <a href="http://www.github.com/miacoupland">here</a> to view my Github profile.</p>
+            <h2 class="en-UK">My Work</h2>
+            <h2 class="eo">Mia Laboro</h2>
+            <p>For a deeper look into my coding projects, please click <a href="http://www.github.com/miacoupland">here</a> to view my Github profile. See below for some examples.</p>
+            <div id="projects">
+                <figure>
+                    <img src="https://i.imgur.com/jVUsMZl.png" alt="Screenshot of PDF Reader programme">
+                    <figcaption>PDF Reading programme. This program was created with Java to read PDFs, save progress, and skip to pages in an interface I can control. I read countless PDFs whilst studying history and was sick of the way they appear in your browser.
+                        I wanted to create a simpler way to read them without taking up a tab in my browser and with simple controls.
+                        <br>Find it<a href="https://github.com/miacoupland/PDF-Reader"> here </a>on Github.</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://i.imgur.com/G7HHoVm.png" alt="Screenshot of Esperanto Dictionary programme">
+                    <figcaption>Esperanto Dictionary. This is a simple Java dictionary programme created to quickly lookup words in either Esperanto or English and find its translation. It works from a .txt file so more words can be added and changed at any time.
+                        </br>Find it<a href="https://github.com/miacoupland/Esperanta-Vortaro"> here </a>on Github.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="https://i.imgur.com/IHz4vg3.png" alt="Screenshot of opening of Pokemon Red Python command line programme">
+                    <figcaption>Pokemon Red. This command-line programme was created with Python as part of the Code First Girls Intensive Introduction to Python course. The project recreates Pokemon Red as a fully interactive text based game.
+                        <br>Find it<a href="https://github.com/miacoupland/PokemonRed"> here </a>on Github.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="https://i.imgur.com/qGV04jr.png" alt="Screenshot of the Pokemon Database ER Diagram">
+                    <figcaption>Pokemon Database. This MySQL database was created as part of the Code First Girls Introduction to SQL. The project keeps track of each Pokemon's stats, abilities, evolutions, et cetera, all in a normalised form. It can be used to form
+                        Pokemon teams.
+                        <br>Find it<a href="https://github.com/miacoupland/Pokemon-Database"> here </a>on Github.
+                    </figcaption>
+                </figure>
+            </div>
         </div>
         <div id="contact">
-            <h2>Contact</h2>
+            <h2 class="en-UK">Contact</h2>
+            <h2 class="eo">Kontacto</h2>
             <p>You can contact me using the form below, or message me on <a href="http://www.linkedin.com/in/mia-coupland">LinkedIn!</a></p>
             <form id="form" action="mailto:miacoupland@mail.com" method="GET" enctype="text/plain" target="_blank">
                 <label for="name">full name:</label>
@@ -69,7 +99,8 @@
             </form>
         </div>
         <div id="blog">
-            <h2>Blog</h2>
+            <h2 class="en-UK">Blog</h2>
+            <h2 class="eo">Blogo</h2>
             <p>Click <a href="article.html">here</a> for more blog posts!</p>
             <article>
                 <h3>Title</h3>
