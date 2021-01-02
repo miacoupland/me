@@ -20,14 +20,6 @@ body {
     z-index: -4;
 }
 
-.eo {
-    display: none;
-}
-
-.en-uk {
-    display: block;
-}
-
 p,
 h1,
 h2,
@@ -64,7 +56,11 @@ p a {
     background-position: center top;
 }
 
-h1 {
+.eo {
+    display: none;
+}
+
+h1 a {
     color: #fff;
     font-size: 70px;
     text-transform: uppercase;
@@ -139,9 +135,13 @@ ul {
 #mywork,
 #contact,
 #blog {
-    margin-top: 20%;
+    margin-top: 25%;
     padding: 3%;
     background-color: #000;
+}
+
+#about {
+    margin-top: 30%;
 }
 
 #intro {
@@ -344,7 +344,7 @@ article {
         overflow: hidden;
         position: absolute;
         right: 2%;
-        top: 6%;
+        top: 8%;
         display: none;
         padding-left: 0;
         margin: 0;
