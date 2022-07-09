@@ -1,16 +1,19 @@
 <div id="navbar">
   <ul id="nav">
     <li class="navlink">
-      <a routerLink="About">{{ "bio.about" | translate }}</a>
+      <a routerLink="/Home">{{ "bio.home" | translate }}</a>
     </li>
     <li class="navlink">
-      <a routerLink="Projects">{{ "bio.my work" | translate }}</a>
+      <a routerLink="/About">{{ "bio.about" | translate }}</a>
     </li>
     <li class="navlink">
-      <a routerLink="Contact">{{ "bio.contact" | translate }}</a>
+      <a routerLink="/Projects">{{ "bio.my work" | translate }}</a>
     </li>
     <li class="navlink">
-      <a routerLink="Blog"> {{ "bio.blog" | translate }}</a>
+      <a routerLink="/Contact">{{ "bio.contact" | translate }}</a>
+    </li>
+    <li class="navlink">
+      <a routerLink="/Blog"> {{ "bio.blog" | translate }}</a>
     </li>
     <select
       #langSelect
