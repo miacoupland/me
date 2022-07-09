@@ -4,44 +4,47 @@ import { TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: [
-    './app.component.scss',
-    './presentation/common/styles/time-based/afternoon.scss',
-  ],
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  public title: string = "Mia Coupland";
+  public title: string = 'Mia Coupland';
+  public starsClass: string;
+  public cloudsClass: string;
 
   constructor(private translate: TranslateService) {
+    this.starsClass = '';
+    this.cloudsClass = '';
     translate.addLangs(['en', 'eo']);
     translate.setDefaultLang('en');
     translate.use('en');
 
-    this.getStyleSheet();
+    setTimeout(() => {
+      this.getStylesheet();
+    }, 5000);
   }
 
-  public getStyleSheet() {
+  public getStylesheet() {
+    let clouds = document.getElementsByClassName('clouds')[0];
+    let stars = document.getElementsByClassName('stars')[0];
+    let twinkling = document.getElementsByClassName('twinkling')[0];
     var currentTime = new Date().getHours();
     if (0 <= currentTime && currentTime < 5) {
-      document.write(
-        "<link rel='stylesheet' href='./common/styles/time-based/nighttime.css' type='text/css'>"
-      );
+      clouds.classList.add('clouds3');
+      stars.classList.add('stars-nighttime');
+      twinkling.classList.remove('hidden');
     }
     if (5 <= currentTime && currentTime < 16) {
-      document.write(
-        "<link rel='stylesheet' href='./common/styles/time-based/morning.css' type='text/css'>"
-      );
+      clouds.classList.add('clouds4');
     }
     if (16 <= currentTime && currentTime < 19) {
-      StyleSheet;
-      document.write(
-        "<link rel='stylesheet' href='./common/styles/time-based/afternoon.css' type='text/css'>"
-      );
+      stars.classList.add('stars-afternoon');
+      clouds.classList.add('clouds3');
+      twinkling.classList.remove('hidden');
     }
     if (19 <= currentTime && currentTime <= 24) {
-      document.write(
-        "<link rel='stylesheet' href='./common/styles/time-based/nighttime.css' type='text/css'>"
-      );
+      clouds.classList.add('clouds3');
+      stars.classList.add('stars-nighttime');
+      twinkling.classList.remove('hidden');
     }
   }
 }
