@@ -1,5 +1,6 @@
 @import "../node_modules/font-awesome/css/font-awesome.css"
-    
+@import 'https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto&family=Roboto+Mono&display=swap'
+
 *
     margin: 0
     padding: 0
@@ -8,32 +9,38 @@
     color: #fff
     text-decoration: none
 
+body
+    font-size: 14pt
+    font-family: 'Roboto Mono'
+    color: #FFF
+    background-color: #000
+    z-index: -4
+
 .header
     display: flex
     flex-flow: row wrap
     justify-content: center
 
 h1 a
-  color: #fff
-  font-size: 70px
-  text-transform: uppercase
-  font-weight: 700
-  background: -webkit-gradient(linear, left top, right top, color-stop(10%, #f1e88e), color-stop(50%, #FFBBDD), color-stop(60%, #e47272))
-  background: linear-gradient(to right, #f1e88e 10%, #FFBBDD 50%, #e47272 60%)
-  background-size: auto auto
-  background-clip: border-box
-  background-size: 200% auto
-  color: #fff
-  background-clip: text
-  color: transparent
-  -webkit-background-clip: text
-  -webkkit-text-fill-color: transparent
-  -webkit-animation: textclip 1.5s linear infinite
-          animation: textclip 1.5s linear infinite
-  display: inline-block
+    color: #fff
+    font-size: 70px
+    text-transform: uppercase
+    font-weight: 700
+    background: -webkit-gradient(linear, left top, right top, color-stop(10%, #f1e88e), color-stop(50%, #FFBBDD), color-stop(60%, #e47272))
+    background: linear-gradient(to right, #f1e88e 10%, #FFBBDD 50%, #e47272 60%)
+    background-size: auto auto
+    background-clip: border-box
+    background-size: 200% auto
+    color: #fff
+    background-clip: text
+    color: transparent
+    -webkit-background-clip: text
+    -webkkit-text-fill-color: transparent
+    -webkit-animation: textclip 1.5s linear infinite
+    animation: textclip 1.5s linear infinite
+    display: inline-block
 
-
-#loading-animation 
+#loading-animation
     position: fixed
     float: left
     top: 50%
@@ -43,7 +50,7 @@ h1 a
     box-sizing: border-box
     transform: translate(-10%)
 
-.ring 
+.ring
     display: inline-block
     position: relative
     width: 80px
@@ -65,12 +72,12 @@ h1 a
 
     :before
         animation-delay: -0.45s
-    
+
     :after
         animation-delay: -0.3s
 
 @keyframes lds-ring
-    0% 
+    0%
         transform: rotate(0deg)
 
     100%
