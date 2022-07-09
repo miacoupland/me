@@ -5,7 +5,9 @@
     "contact": "Contact",
     "here": "here",
     "my work": "My work",
-    "personalStatement": "My name is Mia Coupland and I am a software developer based in Newcastle Upon-Tyne. I am currently undertaking a Masters in Computer Science at Newcastle University and have a background in history. I am a cultural historian who studied my undergraduate degree at the University of Manchester and I am interested in merging the two fields of history and computer science together. I would like to use development for humanitarian or accessibility purposes."
+    "personalStatement": "My name is Mia Coupland and I am a software developer based in Newcastle Upon-Tyne. I am currently undertaking a Masters in Computer Science at Newcastle University and have a background in history. I am a cultural historian who studied my undergraduate degree at the University of Manchester and I am interested in merging the two fields of history and computer science together. I would like to use development for humanitarian or accessibility purposes.",
+    "work-experience": "For more information about my work experience, please click",
+    "view-linkedin": "to view my LinkedIn profile."
   },
   "footer": {
     "description": "The colour of the clouds and sky in the header change depending on the time of day that you view my website.",
