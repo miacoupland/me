@@ -11,7 +11,7 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class AppComponent {
   public title: string = "Mia Coupland";
-  
+
   constructor(private translate: TranslateService) {
     translate.addLangs(['en', 'eo']);
     translate.setDefaultLang('en');
@@ -21,7 +21,6 @@ export class AppComponent {
   }
 
   public getStyleSheet() {
-    console.log('Here is a stylesheet');
     var currentTime = new Date().getHours();
     if (0 <= currentTime && currentTime < 5) {
       document.write(
@@ -34,7 +33,6 @@ export class AppComponent {
       );
     }
     if (16 <= currentTime && currentTime < 19) {
-      console.log('This is the current time');
       StyleSheet;
       document.write(
         "<link rel='stylesheet' href='./common/styles/time-based/afternoon.css' type='text/css'>"
