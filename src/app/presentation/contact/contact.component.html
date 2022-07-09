@@ -7,34 +7,41 @@
         >LinkedIn!</a
       >
     </p>
-    <form
-      id="form"
-      action="mailto:miacoupland@mail.com"
-      method="GET"
-      enctype="text/plain"
-      target="_blank"
-    >
-      <label class="en-UK" for="name">{{
-        "contact.full-name" | translate
-      }}</label>
-      <input
-        name="name"
-        type="text"
-        pattern="[A-Z\sa-z]{3,20}"
-        required
-      /><br />
-      <label for="subject">{{ "contact.subject" | translate }}</label>
-      <input
-        name="subject"
-        type="text"
-        pattern="[A-Z\sa-z]{3,20}"
-        required
-      /><br />
-      <label for="body" class="en-UK">{{
-        "contact.message" | translate
-      }}</label>
-      <textarea id="body" name="body" required></textarea>
-      <br /><input id="send" type="submit" value="{{ 'contact.submit' | translate }}" class="en-UK" />
-    </form>
+    <div class="form-container">
+      <form
+        id="form"
+        action="mailto:miacoupland@mail.com"
+        method="GET"
+        enctype="text/plain"
+        target="_blank"
+      >
+        <label class="en-UK" for="name">{{
+          "contact.full-name" | translate
+        }}</label>
+        <input
+          name="name"
+          type="text"
+          pattern="[A-Z\sa-z]{3,20}"
+          required
+        /><br />
+        <label for="subject">{{ "contact.subject" | translate }}</label>
+        <input
+          name="subject"
+          type="text"
+          pattern="[A-Z\sa-z]{3,20}"
+          required
+        /><br />
+        <label for="body" class="en-UK">{{
+          "contact.message" | translate
+        }}</label>
+        <textarea id="body" name="body" required></textarea>
+        <br /><input
+          id="send"
+          type="submit"
+          value="{{ 'contact.submit' | translate }}"
+          class="en-UK"
+        />
+      </form>
+    </div>
   </div>
 </div>
