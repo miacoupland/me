@@ -1,1 +1,45 @@
-/* No CSS *//*# sourceMappingURL=contact.component.css.map */
+form {
+    margin-top: 2%;
+    width: 80%;
+}
+
+#send {
+    padding: 5px;
+}
+
+label,
+input {
+    display: inline-block;
+}
+
+label {
+    width: 30%;
+}
+
+input[type=text],
+#country,
+textarea {
+    width: 90%;
+    height: 5%;
+    padding: 1%;
+    border: 1px solid #FFBBDD;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    resize: vertical;
+    color: #FFF;
+    background-color: #000;
+}
+
+input[type=submit] {
+    background-color: #000;
+    color: #FFF;
+    font-size: 16px;
+    border: solid 2px #FFF;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #FFBBDD;
+}
