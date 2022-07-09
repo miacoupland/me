@@ -1,19 +1,16 @@
 <div id="navbar">
-  <a href="javascript:void(0);" class="icon" onclick="showHamburger()">
-    <i class="fa fa-bars"></i>
-  </a>
   <ul id="nav">
     <li class="navlink">
-      <a href="index.html#about">{{ "bio.about" | translate }}</a>
+      <a routerLink="About">{{ "bio.about" | translate }}</a>
     </li>
     <li class="navlink">
-      <a href="index.html#mywork">{{ "bio.my work" | translate }}</a>
+      <a routerLink="Projects">{{ "bio.my work" | translate }}</a>
     </li>
     <li class="navlink">
-      <a href="index.html#contact">{{ "bio.contact" | translate }}</a>
+      <a routerLink="Contact">{{ "bio.contact" | translate }}</a>
     </li>
     <li class="navlink">
-      <a href="article.html"> {{ "bio.blog" | translate }}</a>
+      <a routerLink="Blog"> {{ "bio.blog" | translate }}</a>
     </li>
     <select
       #langSelect
