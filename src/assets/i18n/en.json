@@ -10,6 +10,10 @@
     "work-experience": "For more information about my work experience, please click",
     "view-linkedin": "to view my LinkedIn profile."
   },
+  "blog": {
+    "lorem-ipsum": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt anim id est laborum.",
+    "title": "Title"
+  },
   "footer": {
     "description": "The colour of the clouds and sky in the header change depending on the time of day that you view my website.",
     "last-modified": "Last modified: 2022-07-09 Mia Coupland"
