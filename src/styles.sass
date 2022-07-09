@@ -16,6 +16,21 @@ body
     background-color: #000
     z-index: -4
 
+.container
+    display: flex
+    flex-flow: column
+    justify-content: center
+    margin-left: 10%
+    margin-right: 10%
+    overflow-wrap: normal
+    overflow-y: scroll
+    background-color: rgba(0,0,0,0.2)
+    border-radius: 5px
+    padding: 10px
+
+.container::-webkit-scrollbar
+    display: none
+
 .header
     display: flex
     flex-flow: row wrap
