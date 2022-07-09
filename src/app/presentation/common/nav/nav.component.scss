@@ -1,0 +1,74 @@
+#navbar {
+  background-color: transparent;
+  height: 8%;
+  background-position: center top;
+}
+
+#nav {
+  overflow: hidden;
+  position: absolute;
+  right: 2%;
+  top: 5%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 0;
+  margin: 0;
+  max-width: 600px;
+  text-align: right;
+}
+
+.navlink,
+.langnav,
+select,
+ul {
+  list-style-type: none;
+  padding: 2%;
+  margin: 0;
+  bottom: 0;
+  right: 0;
+  font-weight: bold;
+}
+
+#langSelector {
+  min-width: 100%;
+  color: #FFF;
+  background-color: #000;
+  border: solid 2px;
+  max-height: 10%;
+}
+
+#langSelector:hover {
+  color: #FFBBDD;
+  border-color: #FFF;
+}
+
+.navlink:hover a,
+.langSelector:hover a,
+#mywork a {
+  color: #FFBBDD;
+}
+
+@media screen and (max-width: 700px) {
+  #nav {
+    overflow: hidden;
+    position: absolute;
+    right: 2%;
+    top: 8%;
+    display: none;
+    padding-left: 0;
+    margin: 0;
+    max-width: 600px;
+  }
+  .navlink,
+  #langSelector {
+    text-align: right;
+    font-size: 20px;
+  }
+  #langSelector {
+    font-size: 12px;
+    margin-left: 0%;
+  }
+}
+/*# sourceMappingURL=nav.component.css.map */

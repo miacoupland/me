@@ -1,0 +1,32 @@
+<div id="navbar">
+  <a href="javascript:void(0);" class="icon" onclick="showHamburger()">
+    <i class="fa fa-bars"></i>
+  </a>
+  <ul id="nav">
+    <li class="navlink">
+      <a href="index.html#about">{{ "bio.about" | translate }}</a>
+    </li>
+    <li class="navlink">
+      <a href="index.html#mywork">{{ "bio.my work" | translate }}</a>
+    </li>
+    <li class="navlink">
+      <a href="index.html#contact">{{ "bio.contact" | translate }}</a>
+    </li>
+    <li class="navlink">
+      <a href="article.html"> {{ "bio.blog" | translate }}</a>
+    </li>
+    <select
+      #langSelect
+      id="langSelector"
+      (change)="translate.use(langSelect.value)"
+    >
+      <option
+        *ngFor="let lang of translate.getLangs()"
+        [value]="lang"
+        [selected]="lang === translate.currentLang"
+      >
+        {{ lang }}
+      </option>
+    </select>
+  </ul>
+</div>

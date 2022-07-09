@@ -1,0 +1,35 @@
+.stars,
+.twinkling,
+.clouds {
+  position: absolute;
+  background-attachment: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* The below is how to make the background twinkling effect and clouds.
+ Made with tutorial by script-tutorials.com */
+.stars {
+  background: #000 url(/backgrounds/stars.png) repeat top center;
+  z-index: -3;
+}
+
+.twinkling {
+  z-index: -2;
+  background: transparent url(/backgrounds/twinkling.png) repeat top center;
+  -webkit-animation: move-twinkle-back 200s linear infinite;
+  animation: move-twinkle-back 200s linear infinite;
+}
+
+.clouds {
+  background: transparent url(/backgrounds/clouds3.png) repeat top center;
+  z-index: -1;
+  -webkit-animation: move-clouds-back 200s linear infinite;
+  animation: move-clouds-back 200s linear infinite;
+}
+/*# sourceMappingURL=nighttime.css.map */
