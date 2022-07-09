@@ -17,8 +17,11 @@
   "projects": {
     "more": "to view my Github profile. See below for some examples.",
     "please-click": "For a deeper look into my coding projects, please click",
-    "PDF-program": "PDF Reading programme. This program was created with Java to read PDFs, save progress, and skip to pages in an interface I can control. I read countless PDFs whilst studying history and was sick of the way they appear in your browser. I wanted to create a simpler way to read them without taking up a tab in my browser and with simple controls.",
+    "PDF-program": "PDF Reading program. This program was created with Java to read PDFs, save progress, and skip to pages in an interface I can control. I read countless PDFs whilst studying history and was sick of the way they appear in your browser. I wanted to create a simpler way to read them without taking up a tab in my browser and with simple controls.",
     "find-it": "Find it",
-    "on-Github": "on Github"
+    "on-Github": "on Github.",
+    "esperanto-dictionary": "Esperanto Dictionary. This is a simple Java dictionary program created to quickly lookup words in either Esperanto or English and find its translation. It works from a .txt file so more words can be added and changed at any time.",
+    "pokemon-red": "Pokémon Red. This command-line program was created with Python as part of the Code First Girls Intensive Introduction to Python course. The project recreates Pokémon Red as a fully interactive text based game.",
+    "pokemon-database": "Pokémon Database. This MySQL database was created as part of the Code First Girls Introduction to SQL. The project keeps track of each Pokémon's stats, abilities, evolutions, et cetera, all in a normalised form. It can be used to form Pokémon teams."
   }
 }

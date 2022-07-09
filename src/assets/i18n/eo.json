@@ -19,6 +19,9 @@
     "please-click": "Bonvolu alklaki",
     "PDF-program": "PDF-lega programo. Ĉi tiu programo kreiĝis per Java por legi PDFojn, konservu progreson, kaj trovi paĝojn en interfaco, kiun mi povas regi. Mi legis multajn PDFojn kiam mi studis historion kaj mi volis pli simplan programon por legi ilin sen uzi paĝon en mia retumilo.",
     "find-it": "Trovu ĝin",
-    "on-Github": "ĉe Github"
+    "on-Github": "ĉe Github",
+    "esperanto-dictionary": "Esperanta vortaro. Ĉi tiu estas simpla programo per Java kiun kreiĝis por facile trovi vortojn en Esperanto aŭ la Angla kaj trovi la tradukon. La programo uzas .txt dosieron, do pli da vortojn povas aldonas kaj ŝanĝiĝas.",
+    "pokemon-red": "Pokémon Red. This command-line programme was created with Python as part of the Code First Girls Intensive Introduction to Python course. The project recreates Pokémon Red as a fully interactive text based game.",
+    "pokemon-database": "Pokémon Database.<br />This MySQL database was created as part of the Code First Girls Introduction to SQL. The project keeps track of each Pokémon's stats, abilities, evolutions, et cetera, all in a normalised form. It can be used to form Pokémon teams."
   }
 }
