@@ -11,6 +11,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { ProjectsComponent } from './presentation/projects/projects.component';
 import { ContactComponent } from './presentation/contact/contact.component';
+import { PageNotFoundComponent } from './presentation/common/page-not-found/page-not-found.component';
 
 export function createTranslateLoader(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -25,6 +26,7 @@ export function createTranslateLoader(http: HttpClient): TranslateHttpLoader {
     BioComponent,
     ProjectsComponent,
     ContactComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
