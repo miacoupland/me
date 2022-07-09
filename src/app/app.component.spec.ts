@@ -5,12 +5,8 @@ import { AppComponent } from './app.component';
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [
-        RouterTestingModule
-      ],
-      declarations: [
-        AppComponent
-      ],
+      imports: [RouterTestingModule],
+      declarations: [AppComponent],
     }).compileComponents();
   });
 
@@ -23,13 +19,20 @@ describe('AppComponent', () => {
   it(`should have as title 'miacoupland'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('miacoupland');
+    expect(app.title).toEqual('Mia Coupland');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('miacoupland app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain(
+      'miacoupland app is running!'
+    );
   });
+
+  // it('should load translations', async(() => {
+  //   spyOn(translate, 'getBrowserLang').and.returnValue('en');
+  //   const;
+  // }));
 });
