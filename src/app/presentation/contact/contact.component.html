@@ -1,40 +1,47 @@
-<div id="contact">
-  <h2 class="en-UK">Contact</h2>
-  <h2 class="eo">Kontakto</h2>
-  <p class="en-UK">
-    You can contact me using the form below, or message me on
-    <a href="http://www.linkedin.com/in/mia-coupland" target="_blank"
-      >LinkedIn!</a
+<div class="container">
+  <div id="contact">
+    <h2 class="en-UK">Contact</h2>
+    <h2 class="eo">Kontakto</h2>
+    <p class="en-UK">
+      You can contact me using the form below, or message me on
+      <a href="http://www.linkedin.com/in/mia-coupland" target="_blank"
+        >LinkedIn!</a
+      >
+    </p>
+    <p class="eo">
+      Vi povas kontakti min per la formo sub, aŭ mesaĝu min ĉi tie en
+      <a href="https://www.linkedin.com/in/mia-coupland" target="_blank"
+        >LinkedIn!</a
+      >
+    </p>
+    <form
+      id="form"
+      action="mailto:miacoupland@mail.com"
+      method="GET"
+      enctype="text/plain"
+      target="_blank"
     >
-  </p>
-  <p class="eo">
-    Vi povas kontakti min per la formo sub, aŭ mesaĝu min ĉi tie en
-    <a href="https://www.linkedin.com/in/mia-coupland" target="_blank"
-      >LinkedIn!</a
-    >
-  </p>
-  <form
-    id="form"
-    action="mailto:miacoupland@mail.com"
-    method="GET"
-    enctype="text/plain"
-    target="_blank"
-  >
-    <label class="en-UK" for="name">full name:</label>
-    <label class="eo" for="name">nomo:</label>
-    <input name="name" type="text" pattern="[A-Z\sa-z]{3,20}" required /><br />
-    <label for="subject" class="en-UK">subject:</label>
-    <label for="subject" class="eo">subjekto:</label>
-    <input
-      name="subject"
-      type="text"
-      pattern="[A-Z\sa-z]{3,20}"
-      required
-    /><br />
-    <label for="body" class="en-UK">message:</label>
-    <label for="body" class="eo">mesaĝo: </label>
-    <textarea id="body" name="body" required></textarea>
-    <br /><input id="send" type="submit" value="send" class="en-UK" />
-    <input id="send" type="submit" value="submetiĝi" class="eo" />
-  </form>
+      <label class="en-UK" for="name">full name:</label>
+      <label class="eo" for="name">nomo:</label>
+      <input
+        name="name"
+        type="text"
+        pattern="[A-Z\sa-z]{3,20}"
+        required
+      /><br />
+      <label for="subject" class="en-UK">subject:</label>
+      <label for="subject" class="eo">subjekto:</label>
+      <input
+        name="subject"
+        type="text"
+        pattern="[A-Z\sa-z]{3,20}"
+        required
+      /><br />
+      <label for="body" class="en-UK">message:</label>
+      <label for="body" class="eo">mesaĝo: </label>
+      <textarea id="body" name="body" required></textarea>
+      <br /><input id="send" type="submit" value="send" class="en-UK" />
+      <input id="send" type="submit" value="submetiĝi" class="eo" />
+    </form>
+  </div>
 </div>
