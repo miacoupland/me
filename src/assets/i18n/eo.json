@@ -1,11 +1,5 @@
 {
   "bio": {
-    "home": "Hejmo",
-    "about": "Pri mi",
-    "blog": "Blogo",
-    "contact": "Kontakto",
-    "here": "ĉi tie",
-    "my work": "Mia laboro",
     "personalStatement": "Mia nomo estas Mia Coupland kaj mi estas programisto el Newcastle Upon-Tyne. Mi studas magistron pri Komputiko ĉe Novkastelo Universitato kaj mi havas fonon en historio. Mi estas kultura historisto kiu studis mian bakalaŭra grado ĉe la Universitato de Manĉestro kaj mi interesiĝas pri kunfandiĝo la du temoj de historio kaj komputiko kune. Mi ŝatus uzi komputiko por humanitara kaŭzoj aŭ alirebleco.",
     "work-experience": "Por pli da informoj pri mia labora sperto, bonvolu alklaki",
     "view-linkedin": "por vidi mian LinkedIn paĝon."
@@ -13,6 +7,14 @@
   "blog": {
     "lorem-ipsum": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt anim id est laborum.",
     "title": "Titlo"
+  },
+  "common": {
+    "home": "Hejmo",
+    "about": "Pri mi",
+    "blog": "Blogo",
+    "contact": "Kontakto",
+    "here": "ĉi tie",
+    "my work": "Mia laboro"
   },
   "contact": {
     "contact-text": "Vi povas kontakti min per la formo sub, aŭ mesaĝu min ĉi tie en",

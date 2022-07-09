@@ -1,11 +1,5 @@
 {
   "bio": {
-    "home": "Home",
-    "about": "About",
-    "blog": "Blog",
-    "contact": "Contact",
-    "here": "here",
-    "my work": "My work",
     "personalStatement": "My name is Mia Coupland and I am a software developer based in Newcastle Upon-Tyne. I am currently undertaking a Masters in Computer Science at Newcastle University and have a background in history. I am a cultural historian who studied my undergraduate degree at the University of Manchester and I am interested in merging the two fields of history and computer science together. I would like to use development for humanitarian or accessibility purposes.",
     "work-experience": "For more information about my work experience, please click",
     "view-linkedin": "to view my LinkedIn profile."
@@ -13,6 +7,14 @@
   "blog": {
     "lorem-ipsum": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt anim id est laborum.",
     "title": "Title"
+  },
+  "common": {
+    "home": "Home",
+    "about": "About",
+    "blog": "Blog",
+    "contact": "Contact",
+    "here": "here",
+    "my work": "My work"
   },
   "contact": {
     "contact-text": "You can contact me using the form below, or message me on",
