@@ -49,6 +49,11 @@ ul {
 .langSelector:hover a,
 #mywork a {
   color: #FFBBDD;
+  text-decoration: none;
+}
+
+.navlink a {
+  text-decoration: none;
 }
 
 @media screen and (max-width: 700px) {
