@@ -1,5 +1,6 @@
 {
   "bio": {
+    "home": "Hejmo",
     "about": "Pri mi",
     "blog": "Blogo",
     "contact": "Kontakto",
@@ -12,5 +13,12 @@
   "footer": {
     "description": "La koloroj de la nuboj kaj la ĉielo en la kaplinio ŝanĝiĝas depende de la tempo de la tago kiam vi vidas mian retejon.",
     "last-modified": "Laste modifita: 2022-07-09 Mia Coupland"
+  },
+  "projects": {
+    "more": "por vidi miajn informatikajn projektojn.",
+    "please-click": "Bonvolu alklaki",
+    "PDF-program": "PDF-lega programo. Ĉi tiu programo kreiĝis per Java por legi PDFojn, konservu progreson, kaj trovi paĝojn en interfaco, kiun mi povas regi. Mi legis multajn PDFojn kiam mi studis historion kaj mi volis pli simplan programon por legi ilin sen uzi paĝon en mia retumilo.",
+    "find-it": "Trovu ĝin",
+    "on-Github": "ĉe Github"
   }
 }

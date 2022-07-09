@@ -1,5 +1,6 @@
 {
   "bio": {
+    "home": "Home",
     "about": "About",
     "blog": "Blog",
     "contact": "Contact",
@@ -12,5 +13,12 @@
   "footer": {
     "description": "The colour of the clouds and sky in the header change depending on the time of day that you view my website.",
     "last-modified": "Last modified: 2022-07-09 Mia Coupland"
+  },
+  "projects": {
+    "more": "to view my Github profile. See below for some examples.",
+    "please-click": "For a deeper look into my coding projects, please click",
+    "PDF-program": "PDF Reading programme. This program was created with Java to read PDFs, save progress, and skip to pages in an interface I can control. I read countless PDFs whilst studying history and was sick of the way they appear in your browser. I wanted to create a simpler way to read them without taking up a tab in my browser and with simple controls.",
+    "find-it": "Find it",
+    "on-Github": "on Github"
   }
 }
