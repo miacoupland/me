@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { ArticleComponent } from './presentation/article/article.component';
+import { BioComponent } from './presentation/bio/bio.component';
 import { ContactComponent } from './presentation/contact/contact.component';
 import { ProjectsComponent } from './presentation/projects/projects.component';
 
@@ -19,6 +20,13 @@ const routes: Routes = [
         data: { hideNavItem: true },
         redirectTo: '',
         pathMatch: 'full',
+      },
+      {
+        path: 'About',
+        component: BioComponent,
+        data: {
+          pageTitle: 'About',
+        },
       },
       {
         path: 'Blog',
