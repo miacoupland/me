@@ -19,13 +19,13 @@ const routes: Routes = [
       pageTitle: 'About',
     },
   },
-  {
-    path: 'Blog',
-    component: ArticleComponent,
-    data: {
-      pageTitle: 'Blog',
-    },
-  },
+  // {
+  //   path: 'Blog',
+  //   component: ArticleComponent,
+  //   data: {
+  //     pageTitle: 'Blog',
+  //   },
+  // },
   {
     path: 'Contact',
     component: ContactComponent,
