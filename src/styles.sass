@@ -24,14 +24,15 @@ a
     flex-flow: column
     margin-left: 10%
     margin-right: 10%
-    margin-top: 8%
+    margin-top: 15%
     overflow-wrap: normal
     overflow-y: scroll
     background-color: rgba(0,0,0,0.2)
     border-radius: 5px
     padding: 10px
     max-width: 100%
-    max-height: 70vmin
+    min-height: 50vmin
+    max-height: 60vmin
 
 .container::-webkit-scrollbar
     display: none
@@ -59,46 +60,3 @@ h1 a
     -webkit-animation: textclip 1.5s linear infinite
     animation: textclip 1.5s linear infinite
     display: inline-block
-
-#loading-animation
-    position: fixed
-    float: left
-    top: 50%
-    left: 50%
-    height: 120px
-    width: 160px
-    box-sizing: border-box
-    transform: translate(-10%)
-
-.ring
-    display: inline-block
-    position: relative
-    width: 80px
-    height: 80px
-    tranmsform: scale(2)
-
-    :before, :after
-        content: ''
-        box-sizing: border-box
-        display: block
-        position: absolute
-        width: 64px
-        height: 64px
-        margin: 8px
-        border: 4px solid
-        border-radius: 50%
-        animation: lds-ring 1.5s cubic-bezier(0.5, 0.5, 1) infinite
-        border-color: #0074bd transparent transparent
-
-    :before
-        animation-delay: -0.45s
-
-    :after
-        animation-delay: -0.3s
-
-@keyframes lds-ring
-    0%
-        transform: rotate(0deg)
-
-    100%
-        transform: rotate(360deg)
