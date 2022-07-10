@@ -36,7 +36,6 @@ export class AppComponent implements OnInit {
     if (16 <= currentTime && currentTime < 19) {
       stars.classList.add('stars-afternoon');
       clouds.classList.add('clouds3');
-      twinkling.classList.remove('hidden');
     }
     if (19 <= currentTime && currentTime <= 24) {
       clouds.classList.add('clouds3');
