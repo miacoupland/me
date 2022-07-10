@@ -1,0 +1,32 @@
+<div id="navbar">
+  <ul id="nav">
+    <li class="navlink">
+      <a routerLink="/Home">{{ "common.home" | translate }}</a>
+    </li>
+    <li class="navlink">
+      <a routerLink="/About">{{ "common.about" | translate }}</a>
+    </li>
+    <li class="navlink">
+      <a routerLink="/Projects">{{ "common.my work" | translate }}</a>
+    </li>
+    <li class="navlink">
+      <a routerLink="/Contact">{{ "common.contact" | translate }}</a>
+    </li>
+    <!-- <li class="navlink">
+      <a routerLink="/Blog"> {{ "common.blog" | translate }}</a>
+    </li> -->
+    <select
+      #langSelect
+      id="langSelector"
+      (change)="translate.use(langSelect.value)"
+    >
+      <option
+        *ngFor="let lang of translate.getLangs()"
+        [value]="lang"
+        [selected]="lang === translate.currentLang"
+      >
+        {{ lang }}
+      </option>
+    </select>
+  </ul>
+</div>

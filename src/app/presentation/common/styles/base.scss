@@ -1,0 +1,57 @@
+
+
+p {
+    font-size: 14px;
+}
+
+p a {
+    color: #FFBBDD;
+}
+
+.navlink,
+.langnav,
+select,
+ul {
+    list-style-type: none;
+    padding: 2%;
+    margin: 0;
+    bottom: 0;
+    right: 0;
+    font-weight: bold;
+}
+
+.navlink:hover a,
+.langSelector:hover a,
+#mywork a {
+    color: #FFBBDD;
+}
+
+.icon {
+    visibility: hidden;
+}
+
+@media screen and (max-width: 700px) {
+    #about {
+        margin-top: 100%;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    .icon {
+        visibility: visible;
+        position: relative;
+        left: 94%;
+        top: 1%;
+    }
+    #projects {
+        flex-wrap: wrap;
+    }
+    #mywork figure {
+        min-width: 90%;
+        margin-top: 5%;
+    }
+    #mywork figure img {
+        min-width: 90%;
+        max-width: 100%;
+    }
+}

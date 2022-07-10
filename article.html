@@ -1,43 +1,5 @@
-<!DOCTYPE html>
-<html lang="en-UK">
-
-<head>
-    <title>Mia Coupland</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="HandheldFriendly" content="true">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto&family=Roboto+Mono&display=swap');
-    </style>
-    <link rel="stylesheet" href="style/base.css">
-</head>
-
 <body>
     <div id="main">
-        <div id="navbar">
-            <a href="javascript:void(0);" class="icon" onclick="showHamburger()">
-                <i class="fa fa-bars"></i>
-            </a>
-            <ul id="nav">
-                <li class="navlink"><a href="index.html#about" class="en-UK">about</a><a href="index.html#about" class="eo">pri mi</a></li>
-                <li class="navlink"><a href="index.html#mywork" class="en-UK">my work</a><a href="index.html#mywork" class="eo">mia laboro</a></li>
-                <li class="navlink"><a href="index.html#contact" class="en-UK">contact</a><a href="index.html#contact" class="eo">kontakto</a></li>
-                <li class="navlink"><a href="article.html" class="en-UK">blog</a><a href="article.html" class="eo">blogo</a></li>
-                <select id="langSelector" onchange="toggleLanguage()">
-                    <option value="en-UK">english</option>
-                    <option value="eo">esperanto</option>
-                </select>
-            </ul>
-            <h1><a href="index.html">Mia Coupland</a></h1>
-        </div>
-        <div id="intro">
-            <div class="stars"></div>
-            <div class="lights"></div>
-            <div class="clouds"></div>
-        </div>
         <div id="blog">
             <h2 class="en-UK">Blog</h2>
             <h2 class="eo">Blogo</h2>
@@ -72,39 +34,4 @@
             <a href="#">&raquo;</a>
         </div>
     </div>
-    <div id="footer">
-        <ul>
-            <li><i class='fab fa-github' style='font-size:24px'></i><a href="http://www.github.com/miacoupland">
-                    Github</a></li>
-            <li><i class='fab fa-linkedin' style='font-size:24px'></i><a href="http://www.linkedin.com/in/mia-coupland">
-                    LinkedIn</a></li>
-        </ul>
-        <p class="en-UK">The colour of the clouds and sky in the header change depending on the time of day that you view my website.</p>
-        <p class="eo">La koloro de la nuboj kaj la ĉielo en la kaplinio ŝanĝiĝas depende de la tempo de la tago ke vi vidas mian retejon.</p>
-        <br>
-        <p class="en-UK">Last modified: 2020-12-28 Mia Coupland</p>
-        <p class="eo">Laste modifita: 2020-12-28 Mia Coupland</p>
-    </div>
-    <!-------- THE BELOW IS THE DAY AND NIGHT CYCLE ---->
-    <script>
-        function getStyleSheet() {
-            var currentTime = new Date().getHours();
-            if (0 <= currentTime && currentTime < 5) {
-                document.write("<link rel='stylesheet' href='style/nighttime.css' type='text/css'>");
-            }
-            if (5 <= currentTime && currentTime < 16) {
-                document.write("<link rel='stylesheet' href='style/morning.css' type='text/css'>");
-            }
-            if (16 <= currentTime && currentTime < 19) {
-                document.write("<link rel='stylesheet' href='style/afternoon.css' type='text/css'>");
-            }
-            if (19 <= currentTime && currentTime <= 24) {
-                document.write("<link rel='stylesheet' href='style/nighttime.css' type='text/css'>");
-            }
-        }
-        getStyleSheet();
-    </script>
 </body>
-<script src="language/changeLang.js"></script>
-
-</html>

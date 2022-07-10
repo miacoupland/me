@@ -1,0 +1,123 @@
+body {
+  font-size: 14pt;
+  font-family: 'Roboto Mono';
+  color: #FFF;
+  background-color: #000;
+  z-index: -4;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  #intro {
+    .stars,
+    .twinkling,
+    .clouds {
+      position: absolute;
+      background-attachment: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .stars {
+      z-index: -3;
+    }
+
+    .stars-morning {
+      background: #9ecee0 url(./presentation/common/styles/time-based/backgrounds/stars.png) repeat top center;
+    }
+
+    .stars-afternoon {
+      background: #22363d;
+    }
+
+    .stars-nighttime {
+      background: #000 url(./presentation/common/styles/time-based/backgrounds/stars.png) repeat top center;
+    }
+
+    .twinkling {
+      z-index: -2;
+      background: transparent url(./presentation/common/styles/time-based/backgrounds/twinkling.png) repeat top center;
+      -moz-animation:move-twink-back 200s linear infinite;
+      -ms-animation:move-twink-back 200s linear infinite;
+      -o-animation:move-twink-back 200s linear infinite;
+      -webkit-animation:move-twink-back 200s linear infinite;
+      animation:move-twink-back 200s linear infinite;
+    }
+
+    .hidden {
+      visibility: hidden;
+    }
+
+    .clouds {
+      z-index: -1;
+      -webkit-animation: move-clouds-back 200s linear infinite;
+      animation: move-clouds-back 200s linear infinite;
+    }
+
+    .clouds3 {
+      background: transparent url(./presentation/common/styles/time-based/backgrounds/clouds3.png) repeat top center;
+    }
+
+    .clouds4 {
+      background: transparent url(./presentation/common/styles/time-based/backgrounds/clouds4.png) repeat top center;
+    }
+  }
+}
+
+@-webkit-keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* The below is how to make the background twinkling effect and clouds.
+  Made with tutorial by script-tutorials.com */
+@keyframes move-twinkle-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@-webkit-keyframes move-twinkle-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@keyframes move-clouds-back {
+  from {
+  background-position: 0 0;
+  }
+  to {
+  background-position: -10000px 0;
+  }
+}
+
+@-webkit-keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 0;
+  }
+}

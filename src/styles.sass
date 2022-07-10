@@ -1,1 +1,85 @@
-/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/font-awesome/css/font-awesome.css"
+@import 'https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto&family=Roboto+Mono&display=swap'
+
+*
+    margin: 0
+    padding: 0
+    border: 0
+    outline: 0
+    color: #fff
+    text-decoration: none
+
+body
+    font-size: 14pt
+    font-family: 'Roboto Mono'
+    color: #FFF
+    background-color: #000
+    z-index: -4
+
+a
+    text-decoration: underline
+
+.container
+    display: flex
+    flex-flow: column
+    margin-left: 10%
+    margin-right: 10%
+    margin-top: 10%
+    overflow-wrap: normal
+    overflow-y: scroll
+    background-color: rgba(0,0,0,0.2)
+    border-radius: 5px
+    padding: 10px
+    max-width: 100%
+    max-height: 50vh
+
+.container::-webkit-scrollbar
+    display: none
+
+.header
+    display: flex
+    flex-flow: row wrap
+    justify-content: center
+
+h1 a
+    color: #fff
+    font-size: 70px
+    text-transform: uppercase
+    text-align: center
+    font-weight: 700
+    background: -webkit-gradient(linear, left top, right top, color-stop(10%, #f1e88e), color-stop(50%, #FFBBDD), color-stop(60%, #e47272))
+    background: linear-gradient(to right, #f1e88e 10%, #FFBBDD 50%, #e47272 60%)
+    background-size: auto auto
+    background-clip: border-box
+    background-size: 200% auto
+    color: #fff
+    background-clip: text
+    color: transparent
+    -webkit-background-clip: text
+    -webkkit-text-fill-color: transparent
+    -webkit-animation: textclip 1.5s linear infinite
+    animation: textclip 1.5s linear infinite
+    display: inline-block
+
+@media screen and (min-width: 320px) and (max-width: 449px) and (max-height: 600px)
+    h1 a
+        font-size: 30px
+    .container
+        margin-top: 18%
+        max-height: 40vh
+
+@media screen and (min-width: 450px) and (max-height: 600px)
+    h1 a
+        font-size: 30px
+    .container
+        margin-top: 15vh
+
+@media screen and (min-width: 350px) and (min-height: 601px) and (max-height: 699px)
+    .container
+        margin-top: 15%
+        max-height: 40vh
+
+// prevent short wide screens impacting container height
+@media screen and (min-height: 700 px) and (max-height: 900px) and (min-width: 1000px)
+    .container
+        max-height: 45vh
