@@ -35,6 +35,7 @@
     "on-Github": "on Github.",
     "esperanto-dictionary": "Esperanto Dictionary. This is a simple Java dictionary program created to quickly lookup words in either Esperanto or English and find its translation. It works from a .txt file so more words can be added and changed at any time.",
     "pokemon-red": "Pokémon Red. This command-line program was created with Python as part of the Code First Girls Intensive Introduction to Python course. The project recreates Pokémon Red as a fully interactive text based game.",
-    "pokemon-database": "Pokémon Database. This MySQL database was created as part of the Code First Girls Introduction to SQL. The project keeps track of each Pokémon's stats, abilities, evolutions, et cetera, all in a normalised form. It can be used to form Pokémon teams."
+    "pokemon-database": "Pokémon Database. This MySQL database was created as part of the Code First Girls Introduction to SQL. The project keeps track of each Pokémon's stats, abilities, evolutions, et cetera, all in a normalised form. It can be used to form Pokémon teams.",
+    "ivy-bot": "Ivy Bot. This is a simple Discord bot, which sends photos of my dog, Ivy, when someone sends a message with the phrase, '!ivy'."
   }
 }
