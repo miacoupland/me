@@ -12,6 +12,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { ProjectsComponent } from './presentation/projects/projects.component';
 import { ContactComponent } from './presentation/contact/contact.component';
 import { PageNotFoundComponent } from './presentation/common/page-not-found/page-not-found.component';
+import { ProjectTileComponent } from './presentation/projects/project-tile/project-tile/project-tile.component';
 
 export function createTranslateLoader(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -27,6 +28,7 @@ export function createTranslateLoader(http: HttpClient): TranslateHttpLoader {
     ProjectsComponent,
     ContactComponent,
     PageNotFoundComponent,
+    ProjectTileComponent,
   ],
   imports: [
     BrowserModule,
