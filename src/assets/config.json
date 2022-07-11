@@ -4,35 +4,30 @@
             "key": "PDF-program",
             "name": "PDF Reading Program",
             "image-src": "https://i.imgur.com/jVUsMZl.png",
-            "alt-text": "Screenshot of PDF Reader programme",
             "github-link": "https://github.com/miacoupland/PDF-Reader"
         },
         "Esperanto-dictionary": {
             "key": "Esperanto-dictionary",
             "name": "Esperanto Dictionary",
             "image-src": "https://i.imgur.com/G7HHoVm.png",
-            "alt-text": "Screenshot of Esperanto Dictionary program",
             "github-link": "https://github.com/miacoupland/Esperanta-Vortaro"
         },
         "Pokemon-red": {
             "key": "Pokemon-red",
             "name": "Pokemon Red",
             "image-src": "https://i.imgur.com/IHz4vg3.png",
-            "alt-text": "Screenshot of opening of Pokemon Red Python command line program",
             "github-link": "https://github.com/miacoupland/PokemonRed"
         },
         "Pokemon-database": {
             "key": "Pokemon-database",
             "name": "Pokemon Database",
             "image-src": "https://i.imgur.com/qGV04jr.png",
-            "alt-text": "Screenshot of the Pokemon Database ER Diagram",
             "github-link": "https://github.com/miacoupland/Pokemon-Database"
         },
         "Ivy-bot": {
             "key": "Ivy-bot",
             "name": "Ivy Bot",
             "image-src": "https://i.imgur.com/OtIDfhw.png",
-            "alt-text": "Screenshot of the Ivy Bot Discord bot",
             "github-link": "https://github.com/miacoupland/ivy-bot"
         }
     }
