@@ -11,6 +11,7 @@
   </div>
 
   <div id="projects">
-    <app-project-tile></app-project-tile>
+    <app-project-tile *ngFor="let config of tileData | async"
+    [tileData]="config"></app-project-tile>
   </div>
 </div>

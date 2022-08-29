@@ -1,16 +1,12 @@
 <figure>
-    <img
-      src="https://i.imgur.com/qGV04jr.png"
-      alt="Screenshot of the Pokémon Database ER Diagram"
-    />
-    <figcaption>
-      {{ "projects.pokemon-database" | translate }}
-      <br />{{ "projects.find-it" | translate
-      }} <a
-        href="https://github.com/miacoupland/Pokemon-Database"
-        target="_blank"
-      >
+  <img src="{{ imageSrc }}" alt="{{ 'projects.' + key + '.alt-text' | translate }}" />
+  <figcaption>
+    {{ name }}<br />
+    {{ "projects." + key + ".description" | translate }}
+    <br />{{ "projects.find-it" | translate }}
+    <a href="{{ githubLink }}" target="_blank">
       {{ "common.here" | translate }}</a
-      > {{ "projects.on-Github" | translate }}
-    </figcaption>
-  </figure>
+    >
+    {{ "projects.on-Github" | translate }}
+  </figcaption>
+</figure>
