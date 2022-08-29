@@ -32,6 +32,10 @@
     "please-click": "Bonvolu alklaki",
     "find-it": "Trovu ĝin",
     "on-Github": "ĉe Github",
+    "pottery-website": {
+      "description": "Ceramiko retpaĝo por mia patro. Li faras ceramikon en lia libertempo, kaj por prepari por ekspozicio, li demandis ĉu mi povas krei retpaĝon por li. La postuloj estis simplaj, nur ie por li skribi pri sia laborejo, montri kelkajn el liaj potoj kaj ligi al sia Etsy-paĝo. Ĉi tiu instruis min multe pri gastigado de retejo per Firebase, kaj aĉeti domajnon. Ne nur mi povis helpi mian patron, sed mi ankaŭ lernis ion novan!",
+      "alt-text": "Ekrankopio de ceramiko retpaĝo"
+    },
     "PDF-program": {
       "description": "PDF-lega programo. Ĉi tiu programo kreiĝis per Java por legi PDFojn, konservu progreson, kaj trovi paĝojn en interfaco, kiun mi povas regi. Mi legis multajn PDFojn kiam mi studis historion kaj mi volis pli simplan programon por legi ilin sen uzi paĝon en mia retumilo.",
       "alt-text": "Ekrankopio of PDF Reader programo"
