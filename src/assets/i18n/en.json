@@ -1,6 +1,6 @@
 {
   "bio": {
-    "personalStatement": "My name is Mia and I am a software developer based in Newcastle Upon-Tyne. I work for Cambridge University Press and Assessment and I mainly work with Angular and .NET.\n\nI studied at The University of Manchester where I completed an undergraduate degree in history, and then moved on to pursue an MSc in Computer Science at Newcastle University. I have since settled in Newcastle to develop my skills as a software developer.\n\nI am very passionate about learning and continually improving my skills wherever I can. I am eager to learn new topics and have many random hobbies as a result. I speak Esperanto (as you can see from the translations on this webpage!), practice knife flipping, and do needle-felting.\n\nI like to take any opportunity to find out something new and interesting and I hope to continue to further my career as a developer, alongside building my own projects in my spare time\n\nCurrently, I am working on my masters thesis, a project to create a database for international adoptees. During my undergraduate degree, I specialised in cultural history and I really enjoy merging my different interests together and using development for humanitarian purposes.\n\nIf you would like to find out more about my background, you can visit my LinkedIn, Github, or contact me directly at the below links.\nThank you for checking out my website!",
+    "personalStatement": "My name is Mia and I am a software developer based in Newcastle Upon-Tyne. I work for Cambridge University Press and Assessment and I mainly work with Angular and .NET.\n\nI studied at The University of Manchester where I completed an undergraduate degree in history, and then moved on to pursue an MSc in Computer Science at Newcastle University. I have since settled in Newcastle to develop my skills as a software developer.\n\nI am very passionate about learning and continually improving my skills wherever I can. I am eager to learn new topics and have many random hobbies as a result. I speak Esperanto (as you can see from the translations on this webpage!), practice knife flipping, and do needle-felting.\n\nI like to take any opportunity to find out something new and interesting and I hope to continue to further my career as a developer, alongside building my own projects in my spare time.\n\nCurrently, I am working on my masters thesis, a project to create a database for international adoptees. During my undergraduate degree, I specialised in cultural history and I really enjoy merging my different interests together and using development for humanitarian purposes.\n\nIf you would like to find out more about my background, you can visit my LinkedIn, Github, or contact me directly at the below links.\nThank you for checking out my website!",
     "work-experience": "For more information about my work experience, please click",
     "view-linkedin": "to view my LinkedIn profile."
   },
@@ -30,11 +30,31 @@
   "projects": {
     "more": "to view my Github profile. See below for some examples.",
     "please-click": "For a deeper look into my coding projects, please click",
-    "PDF-program": "PDF Reading program. This program was created with Java to read PDFs, save progress, and skip to pages in an interface I can control. I read countless PDFs whilst studying history and was sick of the way they appear in your browser. I wanted to create a simpler way to read them without taking up a tab in my browser and with simple controls.",
     "find-it": "Find it",
     "on-Github": "on Github.",
-    "esperanto-dictionary": "Esperanto Dictionary. This is a simple Java dictionary program created to quickly lookup words in either Esperanto or English and find its translation. It works from a .txt file so more words can be added and changed at any time.",
-    "pokemon-red": "Pokémon Red. This command-line program was created with Python as part of the Code First Girls Intensive Introduction to Python course. The project recreates Pokémon Red as a fully interactive text based game.",
-    "pokemon-database": "Pokémon Database. This MySQL database was created as part of the Code First Girls Introduction to SQL. The project keeps track of each Pokémon's stats, abilities, evolutions, et cetera, all in a normalised form. It can be used to form Pokémon teams."
+    "pottery-website": {
+      "description": "Pottery website that I made for my dad. He enjoys pottery in his spare time and in preparation for an exhbition he asked me to create him a website. The requirements were very basic, just somewhere for him to talk about his workshop, show off some of his pots, and link to his Etsy page. This project taught me a lot about hosting a website, as I've used Github pages for my own, but this was my first time buying a domain and hosting through Firebase, so not only did I get to help my dad out, but I also got to learn something new!",
+      "alt-text": "Screenshot of Pottery Website"
+    },
+    "PDF-program": {
+      "description": "PDF Reading program. This program was created with Java to read PDFs, save progress, and skip to pages in an interface I can control. I read countless PDFs whilst studying history and was sick of the way they appear in your browser. I wanted to create a simpler way to read them without taking up a tab in my browser and with simple controls.",
+      "alt-text": "Screenshot of PDF Reader programme"
+    },
+    "esperanto-dictionary": {
+      "description": "Esperanto Dictionary. This is a simple Java dictionary program created to quickly lookup words in either Esperanto or English and find its translation. It works from a .txt file so more words can be added and changed at any time.",
+      "alt-text": "Screenshot of Esperanto Dictionary program"
+    },
+    "pokemon-red": {
+      "description": "Pokémon Red. This command-line program was created with Python as part of the Code First Girls Intensive Introduction to Python course. The project recreates Pokémon Red as a fully interactive text based game.",
+      "alt-text": "Screenshot of opening of Pokemon Red Python command line program"
+    },
+    "pokemon-database": {
+      "description": "Pokémon Database. This MySQL database was created as part of the Code First Girls Introduction to SQL. The project keeps track of each Pokémon's stats, abilities, evolutions, et cetera, all in a normalised form. It can be used to form Pokémon teams.",
+      "alt-text": "Screenshot of the Pokemon Database ER Diagram"
+    },
+    "ivy-bot": {
+      "description": "Ivy Bot. This is a simple Discord bot, which sends photos of my dog, Ivy, when someone sends a message with the phrase, '!ivy'.",
+      "alt-text": "Screenshot of the Ivy Bot Discord bot"
+    }
   }
 }
