@@ -1,7 +1,7 @@
 <figure>
   <img src="{{ imageSrc }}" alt="{{ 'projects.' + key + '.alt-text' | translate }}" />
-  <figcaption>
-    {{ name }}<br />
+  <figcaption class="project-tile-caption">
+    {{ name }}<br /><br />
     {{ "projects." + key + ".description" | translate }}
     <br />{{ "projects.find-it" | translate }}
     <a href="{{ githubLink }}" target="_blank">
