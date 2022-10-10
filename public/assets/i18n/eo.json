@@ -1,6 +1,6 @@
 {
   "bio": {
-    "personalStatement": "Mia nomo estas Mia Coupland kaj mi estas programisto el Newcastle Upon-Tyne. Mi studas magistron pri Komputiko ĉe Novkastelo Universitato kaj mi havas fonon en historio. Mi estas kultura historisto kiu studis mian bakalaŭra grado ĉe la Universitato de Manĉestro kaj mi interesiĝas pri kunfandiĝo la du temoj de historio kaj komputiko kune. Mi ŝatus uzi komputiko por humanitara kaŭzoj aŭ alirebleco.",
+    "personalStatement": "Mia nomo estas Mia kaj mi estas programisto el Newcastle Upon-Tyne. Mi laboras ĉe la universitata gazetaro kaj taksado de la Universitato de Cambridge, kaj mi ĉefe laboras per Angular kaj .NET.\n\nMi studies ĉe la Universitato de Manĉestrow kie mi finis bakalaŭran diplomon pri historio, kaj poste komencis MSc pri komputiko ĉe la Universitato de Novkastelo. Mi ekde tiam ekloĝis en Novkastelo/la distrikto de Durhamo por plibonigi miajn kapablojn kiel programisto.\n\nMi estas tre pasia pri lernado kaj plibonigi miajn kapablojn ie ajn mi povas. Mi ŝatas lerni novajn temojn kaj mi havas multajn malgrandajn ŝatokupojn. Mi parolas Esperanton (vi povas vidi de la traduko de ĉi tiu retpaĝo!), mi praktikas 'renversi' (malakrajn) tranĉilojn, kaj mi ŝatas 'nadlo felto'. Mi ankaŭ lernas paroli la ĉinan.\n\nMi ŝatas trovi la ŝancojn por io nova kaj interesa kaj mi esperas konstrui miajn proprajn projektojn en mia libera tempo.\n\nLastatempe, mi laboras pri mia disertacio, projekto krei datumbazo por internaciaj adoptitaj homoj. Dum mia bakalaŭra grado, mi specialiĝis en kultura historio, kaj mi tre ĝojis kombini miajn malsamajn interesojn kune kaj uzi komputiko por humanitara kialoj.\n\nSe vi volas scii pli pri mi, vi povas viziti mian LinkedIn, Github, aŭ kontakti mi rekte ĉe la subaj ligiloj.\nDankon pro vizito de mia retpaĝo!",
     "work-experience": "Por pli da informoj pri mia labora sperto, bonvolu alklaki",
     "view-linkedin": "por vidi mian LinkedIn paĝon."
   },
@@ -18,6 +18,7 @@
   },
   "contact": {
     "contact-text": "Vi povas kontakti min per la formo sub, aŭ mesaĝu min ĉi tie en",
+    "email": "Retpoŝtadreso:",
     "full-name": "Nomo:",
     "subject": "Subjekto:",
     "message": "Messaĝo:",
@@ -31,7 +32,7 @@
     "more": "por vidi miajn informatikajn projektojn.",
     "please-click": "Bonvolu alklaki",
     "find-it": "Trovu ĝin",
-    "on-Github": "ĉe Github",
+    "on-Github": "ĉe Github.",
     "pottery-website": {
       "description": "Ceramiko retpaĝo por mia patro. Li faras ceramikon en lia libertempo, kaj por prepari por ekspozicio, li demandis ĉu mi povas krei retpaĝon por li. La postuloj estis simplaj, nur ie por li skribi pri sia laborejo, montri kelkajn el liaj potoj kaj ligi al sia Etsy-paĝo. Ĉi tiu instruis min multe pri gastigado de retejo per Firebase, kaj aĉeti domajnon. Ne nur mi povis helpi mian patron, sed mi ankaŭ lernis ion novan!",
       "alt-text": "Ekrankopio de ceramiko retpaĝo"
@@ -49,7 +50,7 @@
       "alt-text": "Ekrankopio de Pokemon Ruĝa Python programo"
     },
     "pokemon-database": {
-      "description": "Pokémon datumbazo.<br />Ĉi tiun datumbazo kreiĝis per MySQL dum la Code First Girls Introduction to SQL kurso. La projekto spuras la statistikojn, kapablojn, evoluojn, ktp, de ĉiun Pokémon, en normala formo. Oni povas uzi ĝin por formi Pokémon teamojn.",
+      "description": "Pokémon datumbazo.Ĉi tiu datumbazo kreiĝis per MySQL dum la Code First Girls Introduction to SQL kurso. La projekto spuras la statistikojn, kapablojn, evoluojn, ktp, de ĉiu Pokémon, en normala formo. Oni povas uzi ĝin por formi Pokémon teamojn.",
       "alt-text": "Ekrankopio de la Pokemon datumbazo ER diagramo"
     },
     "ivy-bot": {

@@ -18,6 +18,7 @@
   },
   "contact": {
     "contact-text": "You can contact me using the form below, or message me on",
+    "email": "Email:",
     "full-name": "Full name:",
     "subject": "Subject:",
     "message": "Message:",
