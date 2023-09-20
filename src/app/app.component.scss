@@ -1,115 +1,63 @@
-#header {
+.title-text a {
+  color: #fff;
+  font-size: 70px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  background: -webkit-gradient(linear, left top, right top, color-stop(10%, #f1e88e), color-stop(50%, #FFBBDD), color-stop(60%, #e47272));
+  background: linear-gradient(to right, #e20909 10%, #d5d2d2 50%, #dc2020 60%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkkit-text-fill-color: transparent;
+  -webkit-animation: textclip 1.5s linear infinite;
+  animation: textclip 1.5s linear infinite;
+  display: inline-block;
+}
+
+.background1 {
+  text-align: center;
+  color: var(--color);
+  width: 100%;
+  min-height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-
-  #intro {
-    .stars,
-    .twinkling,
-    .clouds {
-      position: absolute;
-      background-attachment: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      width: 100%;
-      height: 100%;
-      display: block;
-    }
-
-    .stars {
-      z-index: -3;
-    }
-
-    .stars-morning {
-      background: #9ecee0 url(./presentation/common/styles/time-based/backgrounds/stars.png) repeat top center;
-    }
-
-    .stars-afternoon {
-      background: #22363d;
-    }
-
-    .stars-nighttime {
-      background: #000 url(./presentation/common/styles/time-based/backgrounds/stars.png) repeat top center;
-    }
-
-    .twinkling {
-      z-index: -2;
-      background: transparent url(./presentation/common/styles/time-based/backgrounds/twinkling.png) repeat top center;
-      -moz-animation:move-twink-back 200s linear infinite;
-      -ms-animation:move-twink-back 200s linear infinite;
-      -o-animation:move-twink-back 200s linear infinite;
-      -webkit-animation:move-twink-back 200s linear infinite;
-      animation:move-twink-back 200s linear infinite;
-    }
-
-    .hidden {
-      visibility: hidden;
-    }
-
-    .clouds {
-      z-index: -1;
-      -webkit-animation: move-clouds-back 200s linear infinite;
-      animation: move-clouds-back 200s linear infinite;
-    }
-
-    .clouds3 {
-      background: transparent url(./presentation/common/styles/time-based/backgrounds/clouds3.png) repeat top center;
-    }
-
-    .clouds4 {
-      background: transparent url(./presentation/common/styles/time-based/backgrounds/clouds4.png) repeat top center;
-    }
-  }
+  justify-content: center;
+  background-image: url("https://images.rawpixel.com/image_1000/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3BkMjUwLXBkZ2Vra28wMDA1MS1pbWFnZV81LmpwZw.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-@-webkit-keyframes textclip {
-  to {
-    background-position: 200% center;
-  }
-}
-
-@keyframes textclip {
-  to {
-    background-position: 200% center;
-  }
-}
-
-/* The below is how to make the background twinkling effect and clouds.
-  Made with tutorial by script-tutorials.com */
-@keyframes move-twinkle-back {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: -10000px 5000px;
-  }
-}
-
-@-webkit-keyframes move-twinkle-back {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: -10000px 5000px;
-  }
-}
-
-@keyframes move-clouds-back {
-  from {
-  background-position: 0 0;
-  }
-  to {
-  background-position: -10000px 0;
-  }
-}
-
-@-webkit-keyframes move-clouds-back {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: -10000px 0;
-  }
+.background1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(
+    to bottom,
+    hsla(5, 15%, 5%, 0) 0%,
+    hsla(5, 15%, 5%, 0.013) 8.1%,
+    hsla(5, 15%, 5%, 0.049) 15.5%,
+    hsla(5, 15%, 5%, 0.104) 22.5%,
+    hsla(5, 15%, 5%, 0.175) 29%,
+    hsla(5, 15%, 5%, 0.259) 35.3%,
+    hsla(5, 15%, 5%, 0.352) 41.2%,
+    hsla(5, 15%, 5%, 0.45) 47.1%,
+    hsla(5, 15%, 5%, 0.55) 52.9%,
+    hsla(5, 15%, 5%, 0.648) 58.8%,
+    hsla(5, 15%, 5%, 0.741) 64.7%,
+    hsla(5, 15%, 5%, 0.825) 71%,
+    hsla(5, 15%, 5%, 0.896) 77.5%,
+    hsla(5, 15%, 5%, 0.951) 84.5%,
+    hsla(5, 15%, 5%, 0.987) 91.9%,
+    hsl(5, 15%, 5%) 100%
+  );
 }
