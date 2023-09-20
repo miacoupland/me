@@ -5,7 +5,6 @@ import { PageNotFoundComponent } from './presentation/common/page-not-found/page
 import { ContactComponent } from './presentation/contact/contact.component';
 import { ProjectsComponent } from './presentation/projects/projects.component';
 import { LandingComponent } from './presentation/common/landing/landing.component';
-import { ArticleComponent } from './presentation/article/article.component';
 
 const routes: Routes = [
   {
@@ -20,13 +19,6 @@ const routes: Routes = [
     component: BioComponent,
     data: {
       pageTitle: 'About',
-    },
-  },
-  {
-    path: 'blog',
-    component: ArticleComponent,
-    data: {
-      pageTitle: 'Blog',
     },
   },
   {
