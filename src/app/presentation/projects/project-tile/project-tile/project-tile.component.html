@@ -1,7 +1,12 @@
-<figure>
-  <img src="{{ imageSrc }}" alt="{{ 'projects.' + key + '.alt-text' | translate }}" />
-  <figcaption class="project-tile-caption">
-    {{ name }}<br /><br />
+<figure class="text-white flex flex-col justify-center">
+  <hr class="border-t-4 border-dotted w-full my-4" />
+  <img
+    src="{{ imageSrc }}"
+    alt="{{ 'projects.' + key + '.alt-text' | translate }}"
+    class=""
+  />
+  <figcaption class="py-4 text-sm">
+    <span class="text-lg underline">{{ name }}</span><br /><br />
     {{ "projects." + key + ".description" | translate }}
     <br />{{ "projects.find-it" | translate }}
     <a href="{{ githubLink }}" target="_blank">
