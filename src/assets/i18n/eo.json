@@ -1,6 +1,11 @@
 {
   "bio": {
-    "personalStatement": "Mia nomo estas Mia Coupland kaj mi estas programisto el Newcastle Upon-Tyne. Mi studas magistron pri Komputiko ĉe Novkastelo Universitato kaj mi havas fonon en historio. Mi estas kultura historisto kiu studis mian bakalaŭra grado ĉe la Universitato de Manĉestro kaj mi interesiĝas pri kunfandiĝo la du temoj de historio kaj komputiko kune. Mi ŝatus uzi komputiko por humanitara kaŭzoj aŭ alirebleco.",
+    "personalStatement": {
+      "1": "Mia nomo estas Mia kaj mi estas programisto el Durham. Mi laboras ĉe GL Education kaj mi ĉefe laboras per Angular kaj .NET.",
+      "2": "Mi studis ĉe la Universitato de Manĉestro kie mi kompletis mian bakalaŭran gradon en historio, atingante 2:1, kaj poste translokiĝis al Novkastelo por studi MSc en Komputiko ĉe Novkastelo Universitato, kie mi atingis distingon.",
+      "3": "Mi ekde ekloĝis en Durham kie mi plibonigas miajn kapablojn kiel programisto. Mi tre pasias pri lernado kaj kontinue pliboniganta ie ajn mi povas. Mi ŝatas preni la ŝancon por trovi novajn kaj interesajn aferojn, kaj mi esperas plibonigi mian karieron kiel programisto, apud konstruante projektojn en mia libertempo.",
+      "4": "Se vi ŝatus scii pli pri mia fono, vi povas viziti mian LinkedIn, Github, aŭ kontaktu min rekte ĉe la subaj ligiloj. Dankon pro vizito de mia retpaĝo!"
+    },
     "work-experience": "Por pli da informoj pri mia labora sperto, bonvolu alklaki",
     "view-linkedin": "por vidi mian LinkedIn paĝon."
   },
@@ -24,7 +29,7 @@
     "submit": "Submetiĝi"
   },
   "footer": {
-    "description": "La koloroj de la nuboj kaj la ĉielo ŝanĝiĝas depende de la tempo de la tago kiam vi vidas mian retejon.",
+    "description": "",
     "last-modified": "Laste modifita: 2022-07-09 Mia Coupland"
   },
   "projects": {
