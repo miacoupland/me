@@ -1,37 +1,18 @@
 .title-text a {
-  color: #fff;
-  font-size: 70px;
-  text-transform: uppercase;
-  text-align: center;
   font-weight: 700;
   background: -webkit-gradient(linear, left top, right top, color-stop(10%, #f1e88e), color-stop(50%, #FFBBDD), color-stop(60%, #e47272));
   background: linear-gradient(to right, #e20909 10%, #d5d2d2 50%, #dc2020 60%);
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
-  color: #fff;
-  background-clip: text;
-  color: transparent;
   -webkit-background-clip: text;
   -webkkit-text-fill-color: transparent;
   -webkit-animation: textclip 1.5s linear infinite;
   animation: textclip 1.5s linear infinite;
-  display: inline-block;
 }
 
 .background1 {
-  text-align: center;
-  color: var(--color);
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   background-image: url("https://images.rawpixel.com/image_1000/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3BkMjUwLXBkZ2Vra28wMDA1MS1pbWFnZV81LmpwZw.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
 }
 
 .background1::after {

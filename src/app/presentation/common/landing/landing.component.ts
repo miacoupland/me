@@ -10,6 +10,6 @@ export class LandingComponent implements OnInit {
   constructor(private titleService: TitleService) { }
 
   ngOnInit(): void {
-    this.titleService.setTitle('common.home');
+    this.titleService.setTitle('mia coupland');
   }
 }
