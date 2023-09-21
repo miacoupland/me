@@ -1,6 +1,5 @@
-<div class="container projects-container">
-  <div id="mywork">
-    <h2>{{ "common.about" | translate }}</h2>
+<div class="projects-container text-white bg-neutral-950 max-h-fit mx-auto p-8 scroll-smooth">
+  <div class="text-center">
     <p>
       {{ "projects.please-click" | translate }}
       <a href="https://www.github.com/miacoupland" target="_blank">
@@ -10,7 +9,7 @@
     </p>
   </div>
 
-  <div id="projects">
+  <div class="grid grid-cols-1 text-center justify-items-center">
     <app-project-tile *ngFor="let config of tileData | async"
     [tileData]="config"></app-project-tile>
   </div>
