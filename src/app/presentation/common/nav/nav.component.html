@@ -1,29 +1,29 @@
-<div id="navbar">
-  <ul id="nav">
-    <li class="navlink">
-      <a routerLink="/Home">{{ "common.home" | translate }}</a>
+<div class="fixed w-full top-0 z-10 bg-slate-50 opacity-80 py-2">
+  <ul
+    class="min-h-fit flex flex-row flex-wrap items-center justify-center list-none text-slate-900 relative"
+  >
+    <li class="navlink no-underline mx-2 hover:bg-red-600 hover:text-slate-100">
+      <a routerLink="/home">{{ "common.home" | translate }}</a>
     </li>
-    <li class="navlink">
-      <a routerLink="/About">{{ "common.about" | translate }}</a>
+    <li class="navlink no-underline mx-2 hover:bg-red-600 hover:text-slate-100">
+      <a routerLink="/about">{{ "common.about" | translate }}</a>
     </li>
-    <li class="navlink">
-      <a routerLink="/Projects">{{ "common.my work" | translate }}</a>
+    <li class="navlink no-underline mx-2 hover:bg-red-600 hover:text-slate-100">
+      <a routerLink="/projects">{{ "common.projects" | translate }}</a>
     </li>
-    <li class="navlink">
-      <a routerLink="/Contact">{{ "common.contact" | translate }}</a>
+    <li class="navlink no-underline mx-2 hover:bg-red-600 hover:text-slate-100">
+      <a routerLink="/contact">{{ "common.contact" | translate }}</a>
     </li>
-    <!-- <li class="navlink">
-      <a routerLink="/Blog"> {{ "common.blog" | translate }}</a>
-    </li> -->
     <select
       #langSelect
-      id="langSelector"
       (change)="translate.use(langSelect.value)"
+      class="text-black m-0.5 border border-red-600"
     >
       <option
         *ngFor="let lang of translate.getLangs()"
         [value]="lang"
         [selected]="lang === translate.currentLang"
+        class="text-red-600 m-0.5"
       >
         {{ lang }}
       </option>
