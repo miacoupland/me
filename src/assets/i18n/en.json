@@ -49,6 +49,10 @@
       "description": "Esperanto Dictionary. This is a simple Java dictionary program created to quickly lookup words in either Esperanto or English and find its translation. It works from a .txt file so more words can be added and changed at any time.",
       "alt-text": "Screenshot of Esperanto Dictionary program"
     },
+    "improved-esperanto-dictionary": {
+      "description": "Esperanto Dictionary 2. This is a full stack dictionary program using Angular, C#, and MySQL. You can quickly lookup words in either Esperanto or English and find its translation. You can also add words to the dictionary through the bottom two fields. I set up the MySQL database on my local machine as a service using DBeaver, and my API makes use of Swagger.",
+      "alt-text": "Screenshot of my improved Esperanto Dictionary program"
+    },
     "pokemon-red": {
       "description": "Pokémon Red. This command-line program was created with Python as part of the Code First Girls Intensive Introduction to Python course. The project recreates Pokémon Red as a fully interactive text based game.",
       "alt-text": "Screenshot of opening of Pokemon Red Python command line program"
