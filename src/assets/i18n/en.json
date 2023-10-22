@@ -1,6 +1,11 @@
 {
   "bio": {
-    "personalStatement": "My name is Mia and I am a software developer based in Newcastle Upon-Tyne. I work for Cambridge University Press and Assessment and I mainly work with Angular and .NET.\n\nI studied at The University of Manchester where I completed an undergraduate degree in history, and then moved on to pursue an MSc in Computer Science at Newcastle University. I have since settled in Newcastle to develop my skills as a software developer.\n\nI am very passionate about learning and continually improving my skills wherever I can. I am eager to learn new topics and have many random hobbies as a result. I speak Esperanto (as you can see from the translations on this webpage!), practice knife flipping, and do needle-felting.\n\nI like to take any opportunity to find out something new and interesting and I hope to continue to further my career as a developer, alongside building my own projects in my spare time.\n\nCurrently, I am working on my masters thesis, a project to create a database for international adoptees. During my undergraduate degree, I specialised in cultural history and I really enjoy merging my different interests together and using development for humanitarian purposes.\n\nIf you would like to find out more about my background, you can visit my LinkedIn, Github, or contact me directly at the below links.\nThank you for checking out my website!",
+    "personalStatement": {
+      "1": "My name is Mia and I am a software developer based in Durham. I work for GL Education and I mainly work with Angular and .NET.",
+      "2": "I studied at The University of Manchester where I completed an undergraduate degree in history, achieving a 2:1, and then moved on to pursue an MSc in Computer Science at Newcastle University where I achieved a distinction.",
+      "3": "I have since settled in Durham to develop my skills as a software developer. I am very passionate about learning and continually improving my skills wherever I can. I like to take any opportunity to find out something new and interesting and I hope to continue to further my career as a developer, alongside building my own projects in my spare time.",
+      "4": "If you would like to find out more about my background, you can visit my LinkedIn, Github, or contact me directly at the below links. Thank you for checking out my website!"
+    },
     "work-experience": "For more information about my work experience, please click",
     "view-linkedin": "to view my LinkedIn profile."
   },
@@ -14,7 +19,7 @@
     "blog": "Blog",
     "contact": "Contact",
     "here": "here",
-    "my work": "My work"
+    "projects": "Projects"
   },
   "contact": {
     "contact-text": "You can contact me using the form below, or message me on",
@@ -24,7 +29,7 @@
     "submit": "Submit"
   },
   "footer": {
-    "description": "The colour of the clouds and sky change depending on the time of day that you view my website.",
+    "description": "",
     "last-modified": "Last modified: 2022-07-09 Mia Coupland"
   },
   "projects": {
@@ -43,6 +48,10 @@
     "esperanto-dictionary": {
       "description": "Esperanto Dictionary. This is a simple Java dictionary program created to quickly lookup words in either Esperanto or English and find its translation. It works from a .txt file so more words can be added and changed at any time.",
       "alt-text": "Screenshot of Esperanto Dictionary program"
+    },
+    "improved-esperanto-dictionary": {
+      "description": "Esperanto Dictionary 2. This is a full stack dictionary program using Angular, C#, and MySQL. You can quickly lookup words in either Esperanto or English and find its translation. You can also add words to the dictionary through the bottom two fields. I set up the MySQL database on my local machine as a service using DBeaver, and my API makes use of Swagger.",
+      "alt-text": "Screenshot of my improved Esperanto Dictionary program"
     },
     "pokemon-red": {
       "description": "Pokémon Red. This command-line program was created with Python as part of the Code First Girls Intensive Introduction to Python course. The project recreates Pokémon Red as a fully interactive text based game.",

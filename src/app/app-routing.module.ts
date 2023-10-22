@@ -1,40 +1,35 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { AppComponent } from './app.component';
-import { ArticleComponent } from './presentation/article/article.component';
+import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { BioComponent } from './presentation/bio/bio.component';
 import { PageNotFoundComponent } from './presentation/common/page-not-found/page-not-found.component';
 import { ContactComponent } from './presentation/contact/contact.component';
 import { ProjectsComponent } from './presentation/projects/projects.component';
+import { LandingComponent } from './presentation/common/landing/landing.component';
 
 const routes: Routes = [
   {
-    path: 'Home',
-    component: AppComponent
+    path: 'home',
+    component: LandingComponent,
+    data: {
+      pageTitle: 'Home',
+    },
   },
   {
-    path: 'About',
+    path: 'about',
     component: BioComponent,
     data: {
       pageTitle: 'About',
     },
   },
-  // {
-  //   path: 'Blog',
-  //   component: ArticleComponent,
-  //   data: {
-  //     pageTitle: 'Blog',
-  //   },
-  // },
   {
-    path: 'Contact',
+    path: 'contact',
     component: ContactComponent,
     data: {
       pageTitle: 'Contact',
     },
   },
   {
-    path: 'Projects',
+    path: 'projects',
     component: ProjectsComponent,
     data: {
       pageTitle: 'Projects',
@@ -42,17 +37,19 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'Home',
-    pathMatch: 'full'
+    redirectTo: '/home',
+    pathMatch: 'full',
   },
   {
     path: '**',
-    component: PageNotFoundComponent
-  }
+    component: PageNotFoundComponent,
+  },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules }),
+  ],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

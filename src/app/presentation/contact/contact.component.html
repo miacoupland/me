@@ -1,19 +1,19 @@
-<div class="container">
-  <div id="contact">
-    <h2>{{ "common.contact" | translate }}</h2>
-    <p>
+<div class="bg-neutral-950 text-white flex flex-row justify-center pt-10">
+  <div class="flex flex-col items-center">
+    <p class="w-1/2">
       {{ "contact.contact-text" | translate }}
       <a href="http://www.linkedin.com/in/mia-coupland" target="_blank"
         >LinkedIn!</a
       >
     </p>
-    <div class="form-container">
+    <div class="form-container pb-10 flex flex-col justify-center w-1/2">
       <form
         id="form"
         action="mailto:miacoupland@mail.com"
         method="GET"
         enctype="text/plain"
         target="_blank"
+        class="mt-4 flex flex-col"
       >
         <label class="en-UK" for="name">{{
           "contact.full-name" | translate
@@ -23,6 +23,7 @@
           type="text"
           pattern="[A-Z\sa-z]{3,20}"
           required
+          class="border border-red-600"
         /><br />
         <label for="subject">{{ "contact.subject" | translate }}</label>
         <input
@@ -30,16 +31,17 @@
           type="text"
           pattern="[A-Z\sa-z]{3,20}"
           required
+          class="border border-red-600"
         /><br />
         <label for="body" class="en-UK">{{
           "contact.message" | translate
         }}</label>
-        <textarea id="body" name="body" required></textarea>
+        <textarea id="body" name="body" required class="border border-red-600"></textarea>
         <br /><input
           id="send"
           type="submit"
           value="{{ 'contact.submit' | translate }}"
-          class="en-UK"
+          class="en-UK cursor-pointer p-1 border border-red-600 hover:bg-red-600"
         />
       </form>
     </div>
