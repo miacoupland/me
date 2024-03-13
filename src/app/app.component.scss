@@ -14,31 +14,3 @@
 .background1 {
   background-image: url("https://images.rawpixel.com/image_1000/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3BkMjUwLXBkZ2Vra28wMDA1MS1pbWFnZV81LmpwZw.jpg");
 }
-
-.background1::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 50%;
-  background: linear-gradient(
-    to bottom,
-    hsla(5, 15%, 5%, 0) 0%,
-    hsla(5, 15%, 5%, 0.013) 8.1%,
-    hsla(5, 15%, 5%, 0.049) 15.5%,
-    hsla(5, 15%, 5%, 0.104) 22.5%,
-    hsla(5, 15%, 5%, 0.175) 29%,
-    hsla(5, 15%, 5%, 0.259) 35.3%,
-    hsla(5, 15%, 5%, 0.352) 41.2%,
-    hsla(5, 15%, 5%, 0.45) 47.1%,
-    hsla(5, 15%, 5%, 0.55) 52.9%,
-    hsla(5, 15%, 5%, 0.648) 58.8%,
-    hsla(5, 15%, 5%, 0.741) 64.7%,
-    hsla(5, 15%, 5%, 0.825) 71%,
-    hsla(5, 15%, 5%, 0.896) 77.5%,
-    hsla(5, 15%, 5%, 0.951) 84.5%,
-    hsla(5, 15%, 5%, 0.987) 91.9%,
-    hsl(5, 15%, 5%) 100%
-  );
-}
