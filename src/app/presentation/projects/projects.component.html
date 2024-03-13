@@ -1,4 +1,4 @@
-<div class="projects-container text-white bg-neutral-950 max-h-fit mx-auto p-8 scroll-smooth">
+<div class="projects-container flex flex-col mx-0 p-8 scroll-smooth">
   <div class="text-center">
     <p>
       {{ "projects.please-click" | translate }}
@@ -10,7 +10,9 @@
   </div>
 
   <div class="grid grid-cols-1 text-center justify-items-center">
-    <app-project-tile *ngFor="let config of tileData | async"
-    [tileData]="config"></app-project-tile>
+    <ng-container *ngFor="let config of tileData | async">
+      <button (click)="showProject(config)">{{ config.name }}</button>
+    </ng-container>
+    <app-project-tile *ngIf="project" [tileData]="project"></app-project-tile>
   </div>
 </div>
