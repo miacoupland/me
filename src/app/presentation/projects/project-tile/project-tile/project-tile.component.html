@@ -1,14 +1,14 @@
-<figure class="text-white flex flex-col justify-center pt-32">
+<figure class=" bg-transparent flex flex-row items-center pt-32 max-w-4xl">
   <img
     src="{{ imageSrc }}"
     alt="{{ 'projects.' + key + '.alt-text' | translate }}"
-    class=""
+    class="max-w-2xl max-h-80"
   />
-  <figcaption class="py-4 text-sm">
-    <span class="text-lg underline">{{ name }}</span><br /><br />
+  <figcaption class="py-4 pl-6 text-sm text-white bg-neutral-950 opacity-70">
+    <span class="text-lg underline text-red-600">{{ name }}</span><br /><br />
     {{ "projects." + key + ".description" | translate }}
     <br />{{ "projects.find-it" | translate }}
-    <a href="{{ githubLink }}" target="_blank">
+    <a href="{{ githubLink }}" target="_blank" class="hover:text-red-600">
       {{ "common.here" | translate }}</a
     >
     {{ "projects.on-Github" | translate }}

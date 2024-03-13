@@ -1,13 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnChanges } from '@angular/core';
 import { Input } from '@angular/core';
-import { Project } from 'src/app/presentation/common/entities/project-entity';
 
 @Component({
   selector: 'app-project-tile',
   templateUrl: './project-tile.component.html',
   styleUrls: ['./project-tile.component.sass'],
 })
-export class ProjectTileComponent implements OnInit {
+export class ProjectTileComponent implements OnChanges {
   @Input() public tileData: any;
   public key: string = '';
   public name: string = '';
@@ -16,7 +15,7 @@ export class ProjectTileComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {
+  public ngOnChanges() {
     this.key = this.tileData.key;
     this.name = this.tileData.name;
     this.imageSrc = this.tileData.imageSrc;
