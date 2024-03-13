@@ -1,51 +1,51 @@
 p a {
-    color: #FFBBDD;
+  color: #f3eeee;
 }
 
 .navlink,
 .langnav,
 select,
 ul {
-    list-style-type: none;
-    padding: 2%;
-    margin: 0;
-    bottom: 0;
-    right: 0;
-    font-weight: bold;
+  list-style-type: none;
+  padding: 2%;
+  margin: 0;
+  bottom: 0;
+  right: 0;
+  font-weight: bold;
 }
 
 .navlink:hover a,
 .langSelector:hover a,
 #mywork a {
-    color: #FFBBDD;
+  color: #ffbbdd;
 }
 
 .icon {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 @media screen and (max-width: 700px) {
-    #about {
-        margin-top: 100%;
-    }
-    h1 {
-        font-size: 50px;
-    }
-    .icon {
-        visibility: visible;
-        position: relative;
-        left: 94%;
-        top: 1%;
-    }
-    #projects {
-        flex-wrap: wrap;
-    }
-    #mywork figure {
-        min-width: 90%;
-        margin-top: 5%;
-    }
-    #mywork figure img {
-        min-width: 90%;
-        max-width: 100%;
-    }
+  #about {
+    margin-top: 100%;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  .icon {
+    visibility: visible;
+    position: relative;
+    left: 94%;
+    top: 1%;
+  }
+  #projects {
+    flex-wrap: wrap;
+  }
+  #mywork figure {
+    min-width: 90%;
+    margin-top: 5%;
+  }
+  #mywork figure img {
+    min-width: 90%;
+    max-width: 100%;
+  }
 }
