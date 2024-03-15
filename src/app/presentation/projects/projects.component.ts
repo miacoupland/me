@@ -13,10 +13,11 @@ import { TitleService } from '../services/title.service';
 export class ProjectsComponent implements OnInit {
   public tileData: Observable<Project[]> = of(Object.values(config.projects));
 
-  public project: Project | null = null;
+  public project!: Project;
 
   constructor(private titleService: TitleService) {
     this.tileData.pipe(takeUntilDestroyed()).subscribe((value) => {
+      this.project = value[0]
       return [value[0], value[1]];
     });
   }
