@@ -1,16 +1,26 @@
-<figure class=" bg-transparent flex flex-row items-center pt-32 max-w-4xl">
-  <img
-    src="{{ imageSrc }}"
-    alt="{{ 'projects.' + key + '.alt-text' | translate }}"
-    class="max-w-2xl max-h-80"
-  />
-  <figcaption class="py-4 pl-6 text-sm text-white bg-neutral-950 opacity-70">
-    <span class="text-lg underline text-red-600">{{ name }}</span><br /><br />
-    {{ "projects." + key + ".description" | translate }}
-    <br />{{ "projects.find-it" | translate }}
-    <a href="{{ githubLink }}" target="_blank" class="hover:text-red-600">
-      {{ "common.here" | translate }}</a
-    >
-    {{ "projects.on-Github" | translate }}
-  </figcaption>
+<figure
+  class="bg-slate-100 rounded-3xl p-5 border h-fit border-indigo-500 w-full max-w-6xl"
+>
+  <div class="grid grid-cols-2">
+    <img
+      src="{{ imageSrc }}"
+      alt="{{ 'projects.' + key + '.alt-text' | translate }}"
+      class="border border-indigo-500 rounded-2xl w-fit"
+    />
+    <div class="flex flex-col">
+      <figcaption class="pl-10 p-5 h-full">
+        <span class="text-3xl font-bold text-indigo-500">{{ name | translate }}</span>
+        <br /><br />
+        {{ "projects." + key + ".description" | translate }}
+        <br />
+      </figcaption>
+      <div class="h-10 self-end items-end">
+        <button
+          class="rounded-3xl border border-indigo-500 p-1 border-b-4 border-r-4 hover:border self-end ml-2"
+        >
+          Continue Reading
+        </button>
+      </div>
+    </div>
+  </div>
 </figure>
