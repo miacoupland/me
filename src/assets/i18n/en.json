@@ -19,7 +19,8 @@
     "blog": "Blog",
     "contact": "Contact",
     "here": "here",
-    "projects": "Projects"
+    "projects": "Projects",
+    "page-not-found": "Page not found"
   },
   "contact": {
     "contact-text": "You can contact me using the form below, or message me on",
