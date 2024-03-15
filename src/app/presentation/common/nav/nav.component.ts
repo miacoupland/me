@@ -7,6 +7,8 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./nav.component.scss'],
 })
 export class NavComponent {
+  public title: string = 'mia coupland';
+
   constructor(public translate: TranslateService) {
     translate.addLangs(['en', 'eo']);
     translate.setDefaultLang('en');

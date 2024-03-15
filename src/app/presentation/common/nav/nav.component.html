@@ -1,32 +1,40 @@
-<div class="fixed w-full top-0 z-10 bg-slate-50 opacity-80 py-2">
+<div class="flex flex-row fixed w-5/6 top-0 z-10 bg-slate-50 py-2 rounded-3xl m-10 justify-around px-6 max-w-6xl">
+  <h1 class="text-3xl font-bold">
+    <a href="/home" class="">{{
+      title | translate
+    }}</a>
+  </h1>
   <ul
-    class="min-h-fit flex flex-row flex-wrap items-center justify-center list-none text-slate-900 relative"
+    class="min-h-fit flex flex-row flex-wrap items-center justify-center list-none text-slate-900 relative text-md"
   >
-    <li class="navlink no-underline mx-2 hover:bg-red-600 hover:text-slate-100">
+    <li class="navlink no-underline mx-2 hover:text-indigo-500">
       <a routerLink="/home">{{ "common.home" | translate }}</a>
     </li>
-    <li class="navlink no-underline mx-2 hover:bg-red-600 hover:text-slate-100">
+    <li class="navlink no-underline mx-2 hover:text-indigo-500">
       <a routerLink="/about">{{ "common.about" | translate }}</a>
     </li>
-    <li class="navlink no-underline mx-2 hover:bg-red-600 hover:text-slate-100">
+    <li class="navlink no-underline mx-2 hover:text-indigo-500">
       <a routerLink="/projects">{{ "common.projects" | translate }}</a>
     </li>
-    <li class="navlink no-underline mx-2 hover:bg-red-600 hover:text-slate-100">
+    <li class="navlink no-underline mx-2 hover:text-indigo-500">
       <a routerLink="/contact">{{ "common.contact" | translate }}</a>
     </li>
+    <li class="navlink no-underline mx-2 hover:text-indigo-500">
+      <a routerLink="/blog">{{ "common.blog" | translate }}</a>
+    </li>
+  </ul>
     <select
       #langSelect
       (change)="translate.use(langSelect.value)"
-      class="text-black m-0.5 border border-red-600"
+      class="text-black m-0.5 border border-indigo-500"
     >
       <option
         *ngFor="let lang of translate.getLangs()"
         [value]="lang"
         [selected]="lang === translate.currentLang"
-        class="text-red-600 m-0.5"
+        class="text-indigo-500 m-0.5"
       >
         {{ lang }}
       </option>
     </select>
-  </ul>
 </div>
