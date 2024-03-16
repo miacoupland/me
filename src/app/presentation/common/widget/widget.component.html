@@ -1,6 +1,23 @@
-<div class="bg-slate-100 rounded-lg max-w-64 p-2 relative cursor-move" cdkDrag>
-  <h4 class="bg-red-200 rounded-3xl min-w-fit p-1 max-w-40 -top-4 absolute z-20" cdkDragHandle>{{ title | translate }}</h4>
-  <div class="max-w-56 p-4">
-    {{ content | translate }}
+<div class="" cdkDrag>
+  <div
+    class="text-white text-sm bg-black right-0 left-0 bottom-0 mb-0 border-white border h-8 flex flex-row items-center justify-between cursor-move"
+    cdkDragHandle
+  >
+    {{ title | translate }}
+    <div class="flex flex-row">
+      <div class="minimise px-1 active:border-2">_</div>
+      <div class="maximise px-1 active:border-2">||</div>
+      <div class="close px-1 active:border-2">X</div>
+    </div>
+  </div>
+  <div class="bg-black text-white text-sm border-white border p-1">
+    <ul class="flex flex-row">
+      <li class="px-1 active:border-2 hover:border">File</li>
+      <li class="px-1 active:border-2 hover:border">Edit</li>
+      <li class="px-1 active:border-2 hover:border">View</li>
+    </ul>
+  </div>
+  <div class="bg-black text-white border border-white h-fit w-full">
+    <ng-content></ng-content>
   </div>
 </div>
