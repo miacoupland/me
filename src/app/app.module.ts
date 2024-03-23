@@ -14,6 +14,7 @@ import { ContactComponent } from './presentation/contact/contact.component';
 import { PageNotFoundComponent } from './presentation/common/page-not-found/page-not-found.component';
 import { ProjectTileComponent } from './presentation/projects/project-tile/project-tile/project-tile.component';
 import { LandingComponent } from './presentation/common/landing/landing.component';
+import { WidgetModule } from './presentation/common/widget/widget.module';
 
 export function createTranslateLoader(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -43,6 +44,7 @@ export function createTranslateLoader(http: HttpClient): TranslateHttpLoader {
         deps: [HttpClient],
       },
     }),
+    WidgetModule,
   ],
   exports: [TranslateModule],
   providers: [],
