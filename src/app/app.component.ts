@@ -1,7 +1,9 @@
 import {
   ChangeDetectorRef,
   Component,
+  DestroyRef,
   OnInit,
+  inject,
 } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { TitleService } from './presentation/services/title.service';
@@ -14,6 +16,11 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 })
 export class AppComponent implements OnInit {
   public title: string = 'mia coupland';
+  public projects: boolean = false;
+  public contact: boolean = false;
+  public bio: boolean = false;
+
+  private _destroyRef = inject(DestroyRef);
 
   constructor(
     private translate: TranslateService,
@@ -28,10 +35,22 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.titleService.title$
-      .pipe(takeUntilDestroyed())
+      .pipe(takeUntilDestroyed(this._destroyRef))
       .subscribe((title) => {
         this.title = title;
         this.cdRef.detectChanges();
       });
+  }
+
+  public showProjects(s: boolean): void {
+    this.projects = s;
+  }
+
+  public showContact(s: boolean): void {
+    this.contact = s;
+  }
+
+  public showBio(s: boolean): void {
+    this.bio = s;
   }
 }
