@@ -1,19 +1,49 @@
-<div class="footer text-white text-sm text-center bg-black right-0 left-0 bottom-0 mb-0 p-1">
-  <div class="content flex flex-col flex-wrap justify-center items-center w-full">
-    <ul class="ml-2 flex flex-row flex-nowrap justify-center list-none mb-2">
-      <li class="mr-2">
-        <a href="http://www.github.com/miacoupland"
-          ><i class="fa fa-github mr-0.5" style="font-size: 24px"></i>Github</a
-        >
-      </li>
-      <li class="mr-2">
-        <a href="http://www.linkedin.com/in/mia-coupland"
-          ><i class="fa fa-linkedin mr-0.5" style="font-size: 24px"></i>LinkedIn</a
-        >
-      </li>
-    </ul>
-    <p class="mx-2">{{ "footer.description" | translate }}</p>
-    <br />
-    <p class="mx-2">{{ "footer.last-modified" | translate }}</p>
+<div class="bg-black text-white fixed bottom-8 grid grid-cols-3" *ngIf="menu">
+  <div class="col-span-1 bg-white text-black p-2"></div>
+  <ul class="col-span-2 text-left w-full">
+    <li class="p-1 border-b hover:bg-white hover:text-black" (click)="showBio()">About</li>
+    <li class="p-1 border-y hover:bg-white hover:text-black" (click)="showProjects()">Projects</li>
+    <li class="p-1 border-y hover:bg-white hover:text-black" (click)="showContact()">Contact</li>
+    <li class="p-1 border-t hover:bg-white hover:text-black">Blog</li>
+  </ul>
+</div>
+
+<div
+  class="text-white text-sm text-center bg-black right-0 left-0 bottom-0 mb-0 border-white border h-8 flex flex-row items-center justify-between"
+>
+  <div class="h-full flex flex-row items-center border-r border-r-white">
+    <button
+      class="menu-btn px-2 border h-full active:border-2"
+      (click)="toggleMenu()"
+    >
+      Menu
+    </button>
+    <button
+      class="px-2 h-full border active:border-t-black active:border-l-black active:border-r-white active:border-b-white border-l-white border-r-black border-b-black"
+      (click)="showBio()"
+    >
+      About
+    </button>
+    <button
+      class="px-2 h-full border active:border-t-black active:border-l-black active:border-r-white active:border-b-white border-l-white border-r-black border-b-black"
+      (click)="showProjects()"
+    >
+      Projects
+    </button>
+    <button
+      class="px-2 h-full border active:border-t-black active:border-l-black active:border-r-white active:border-b-white border-l-white border-r-black border-b-black"
+      (click)="showContact()"
+    >
+      Contact
+    </button>
+  </div>
+
+  <div class="flex flex-row h-full items-center">
+    <div class="pr-2 flex items-center h-full">
+      {{ dateTime | date : "dd MMMM yyyy" }}
+    </div>
+    <div class="px-2 border-l flex items-center h-full">
+      {{ dateTime | date : "HH:MM" }}
+    </div>
   </div>
 </div>
