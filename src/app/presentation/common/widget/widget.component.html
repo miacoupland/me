@@ -1,13 +1,13 @@
 <div class="" cdkDrag>
   <div
-    class="text-white text-sm bg-black right-0 left-0 bottom-0 mb-0 border-white border h-8 flex flex-row items-center justify-between cursor-move"
+    class="text-white text-sm bg-black right-0 left-0 bottom-0 mb-0 border-white border h-8 flex flex-row items-center justify-between cursor-move pl-2"
     cdkDragHandle
   >
     {{ title | translate }}
     <div class="flex flex-row">
-      <div class="minimise px-1 active:border-2">_</div>
-      <div class="maximise px-1 active:border-2">||</div>
-      <div class="close px-1 active:border-2">X</div>
+      <div class="minimise px-2 active:border-2">_</div>
+      <div class="maximise px-2 active:border-2">||</div>
+      <div class="close px-2 active:border-2" (click)="closeWidget()">X</div>
     </div>
   </div>
   <div class="bg-black text-white text-sm border-white border p-1">
@@ -17,7 +17,7 @@
       <li class="px-1 active:border-2 hover:border">View</li>
     </ul>
   </div>
-  <div class="bg-black text-white border border-white h-fit w-full">
+  <div class="scrollbar bg-white text-white border border-white overflow-scroll max-h-64">
     <ng-content></ng-content>
   </div>
 </div>

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'widget',
@@ -8,6 +8,12 @@ import { Component, Input } from '@angular/core';
 export class WidgetComponent {
   @Input() public title!: string;
   @Input() public content!: string;
+  @Output() public closeChange: EventEmitter<boolean> =
+    new EventEmitter<boolean>();
 
   constructor() {}
+
+  public closeWidget(): void {
+    this.closeChange.next(false);
+  }
 }
