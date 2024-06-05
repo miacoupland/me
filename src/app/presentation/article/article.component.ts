@@ -4,7 +4,8 @@ import { TitleService } from '../services/title.service';
 @Component({
   selector: 'app-article',
   templateUrl: './article.component.html',
-  styleUrls: ['./article.component.scss']
+  styleUrls: ['./article.component.scss'],
+  standalone: true,
 })
 export class ArticleComponent implements OnInit {
 
