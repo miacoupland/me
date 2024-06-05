@@ -14,9 +14,15 @@
         },
         "Esperanto-dictionary": {
             "key": "esperanto-dictionary",
-            "name": "Esperanto Dictionary",
+            "name": "Esperanto Dictionary Java App",
             "imageSrc": "https://i.imgur.com/G7HHoVm.png",
             "githubLink": "https://github.com/miacoupland/Esperanta-Vortaro"
+        },
+        "Improved Esperanto-dictionary": {
+          "key": "improved-esperanto-dictionary",
+          "name": "Full-stack Esperanto Dictionary Web App",
+          "imageSrc": "https://i.imgur.com/6cdetGR.png",
+          "githubLink": "https://github.com/miacoupland/Esperanta-Vortaro-2"
         },
         "Pokemon-red": {
             "key": "pokemon-red",

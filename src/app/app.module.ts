@@ -13,6 +13,7 @@ import { ProjectsComponent } from './presentation/projects/projects.component';
 import { ContactComponent } from './presentation/contact/contact.component';
 import { PageNotFoundComponent } from './presentation/common/page-not-found/page-not-found.component';
 import { ProjectTileComponent } from './presentation/projects/project-tile/project-tile/project-tile.component';
+import { LandingComponent } from './presentation/common/landing/landing.component';
 
 export function createTranslateLoader(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -22,12 +23,13 @@ export function createTranslateLoader(http: HttpClient): TranslateHttpLoader {
   declarations: [
     AppComponent,
     ArticleComponent,
-    NavComponent,
-    FooterComponent,
     BioComponent,
-    ProjectsComponent,
     ContactComponent,
+    FooterComponent,
+    LandingComponent,
+    NavComponent,
     PageNotFoundComponent,
+    ProjectsComponent,
     ProjectTileComponent,
   ],
   imports: [
