@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Input } from '@angular/core';
-import { Project } from 'src/app/presentation/common/entities/project-entity';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-project-tile',
   templateUrl: './project-tile.component.html',
   styleUrls: ['./project-tile.component.sass'],
+  standalone: true,
+  imports: [TranslateModule],
 })
 export class ProjectTileComponent implements OnInit {
   @Input() public tileData: any;
