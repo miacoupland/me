@@ -23,20 +23,21 @@
   },
   "contact": {
     "contact-text": "Vi povas kontakti min per la formo sub, aŭ mesaĝu min ĉi tie en",
+    "email": "Retpoŝtadreso:",
     "full-name": "Nomo:",
     "subject": "Subjekto:",
     "message": "Messaĝo:",
     "submit": "Submetiĝi"
   },
   "footer": {
-    "description": "",
-    "last-modified": "Laste modifita: 2022-07-09 Mia Coupland"
+    "description": "La koloroj de la nuboj kaj la ĉielo ŝanĝiĝas depende de la tempo de la tago kiam vi vidas mian retejon.",
+    "last-modified": "Laste modifita: 2023-02-12 Mia Coupland"
   },
   "projects": {
     "more": "por vidi miajn informatikajn projektojn.",
     "please-click": "Bonvolu alklaki",
     "find-it": "Trovu ĝin",
-    "on-Github": "ĉe Github",
+    "on-Github": "ĉe Github.",
     "pottery-website": {
       "description": "Ceramiko retpaĝo por mia patro. Li faras ceramikon en lia libertempo, kaj por prepari por ekspozicio, li demandis ĉu mi povas krei retpaĝon por li. La postuloj estis simplaj, nur ie por li skribi pri sia laborejo, montri kelkajn el liaj potoj kaj ligi al sia Etsy-paĝo. Ĉi tiu instruis min multe pri gastigado de retejo per Firebase, kaj aĉeti domajnon. Ne nur mi povis helpi mian patron, sed mi ankaŭ lernis ion novan!",
       "alt-text": "Ekrankopio de ceramiko retpaĝo"
@@ -58,7 +59,7 @@
       "alt-text": "Ekrankopio de Pokemon Ruĝa Python programo"
     },
     "pokemon-database": {
-      "description": "Pokémon datumbazo.<br />Ĉi tiun datumbazo kreiĝis per MySQL dum la Code First Girls Introduction to SQL kurso. La projekto spuras la statistikojn, kapablojn, evoluojn, ktp, de ĉiun Pokémon, en normala formo. Oni povas uzi ĝin por formi Pokémon teamojn.",
+      "description": "Pokémon datumbazo.Ĉi tiu datumbazo kreiĝis per MySQL dum la Code First Girls Introduction to SQL kurso. La projekto spuras la statistikojn, kapablojn, evoluojn, ktp, de ĉiu Pokémon, en normala formo. Oni povas uzi ĝin por formi Pokémon teamojn.",
       "alt-text": "Ekrankopio de la Pokemon datumbazo ER diagramo"
     },
     "ivy-bot": {
