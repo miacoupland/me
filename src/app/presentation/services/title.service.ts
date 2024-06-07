@@ -1,16 +1,14 @@
-import { Injectable } from '@angular/core';
-import { BehaviorSubject, Observable } from 'rxjs';
+import { Injectable, signal } from '@angular/core';
 
 @Injectable({ providedIn: 'root' })
 export class TitleService {
-  private readonly _title: BehaviorSubject<string> = new BehaviorSubject<string>('');
-  public readonly title$: Observable<string> = this._title.asObservable();
+  private readonly _title = signal<string>('');
 
   public get title(): string {
-    return this._title.getValue();
+    return this._title();
   }
 
   public setTitle(title: string) {
-    this._title.next(title);
+    this._title.set(title);
   }
 }
