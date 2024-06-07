@@ -11,16 +11,16 @@
         {{ "projects.more" | translate }}
       </p>
     </div>
-    <ng-container *ngFor="let config of tileData | async">
-      <div class="h-14 text-left">
-        <button
-          (click)="showProject(config)"
-          class="border border-b-4 border-r-4 max-w-fit p-1 m-2 hover:border"
-        >
-          {{ config.name }}
-        </button>
-      </div>
-    </ng-container>
+    @for (tile of tileData(); track $index) {
+    <div class="h-14 text-left">
+      <button
+        (click)="showProject(tile)"
+        class="border border-b-4 border-r-4 max-w-fit p-1 m-2 hover:border"
+      >
+        {{ tile.name }}
+      </button>
+    </div>
+    }
   </div>
 
   <app-project-tile

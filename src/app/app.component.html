@@ -3,38 +3,34 @@
 >
   <!-- <app-nav></app-nav> -->
   <div class="pt-64 max-w-screen-2xl">
-    <ng-container #projects *ngIf="projects">
-      <widget
-        [title]="'Projects'"
-        class="top-72 right-24"
-        (closeChange)="showProjects($event)"
-      >
-        <app-projects></app-projects>
-      </widget>
-    </ng-container>
-
-    <ng-container #contact *ngIf="contact">
-      <widget
-        [title]="'Contact'"
-        class="bottom-32 left-7"
-        (closeChange)="showContact($event)"
-      >
-        <app-contact></app-contact>
-      </widget>
-    </ng-container>
-
-    <ng-container #bio *ngIf="bio">
-      <widget
-        [title]="'About'"
-        class="w-3/5 top-36 left-44"
-        (closeChange)="showBio($event)"
-      >
-        <app-bio></app-bio>
-      </widget>
-    </ng-container>
-
+    @if (projects) {
+    <widget
+      [title]="'Projects'"
+      class="top-72 right-24"
+      (closeChange)="showProjects($event)"
+    >
+      <app-projects></app-projects>
+    </widget>
+    } @if (contact) {
+    <widget
+      [title]="'Contact'"
+      class="bottom-32 left-7"
+      (closeChange)="showContact($event)"
+    >
+      <app-contact></app-contact>
+    </widget>
+    } @if (bio) {
+    <widget
+      [title]="'About'"
+      class="w-3/5 top-36 left-44"
+      (closeChange)="showBio($event)"
+    >
+      <app-bio></app-bio>
+    </widget>
+    }
     <router-outlet></router-outlet>
   </div>
+
   <app-footer
     class="absolute w-full bottom-0 left-0"
     (projectsChange)="showProjects($event)"

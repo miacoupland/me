@@ -1,12 +1,29 @@
-<div class="bg-black text-white fixed bottom-8 grid grid-cols-3" *ngIf="menu">
+@if (menu) {
+<div class="bg-black text-white fixed bottom-8 grid grid-cols-3">
   <div class="col-span-1 bg-white text-black p-2"></div>
   <ul class="col-span-2 text-left w-full">
-    <li class="p-1 border-b hover:bg-white hover:text-black" (click)="showBio()">About</li>
-    <li class="p-1 border-y hover:bg-white hover:text-black" (click)="showProjects()">Projects</li>
-    <li class="p-1 border-y hover:bg-white hover:text-black" (click)="showContact()">Contact</li>
+    <li
+      class="p-1 border-b hover:bg-white hover:text-black"
+      (click)="showBio()"
+    >
+      About
+    </li>
+    <li
+      class="p-1 border-y hover:bg-white hover:text-black"
+      (click)="showProjects()"
+    >
+      Projects
+    </li>
+    <li
+      class="p-1 border-y hover:bg-white hover:text-black"
+      (click)="showContact()"
+    >
+      Contact
+    </li>
     <li class="p-1 border-t hover:bg-white hover:text-black">Blog</li>
   </ul>
 </div>
+}
 
 <div
   class="text-white text-sm text-center bg-black right-0 left-0 bottom-0 mb-0 border-white border h-8 flex flex-row items-center justify-between"
