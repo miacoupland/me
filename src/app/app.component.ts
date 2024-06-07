@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { TitleService } from './presentation/services/title.service';
 import { FooterComponent } from './presentation/common/footer/footer.component';
@@ -24,6 +24,7 @@ import { BioComponent } from './presentation/bio/bio.component';
     ContactComponent,
     BioComponent,
   ],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent implements OnInit {
   public title: string = 'mia coupland';

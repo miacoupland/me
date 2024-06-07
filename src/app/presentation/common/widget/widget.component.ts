@@ -1,4 +1,4 @@
-import { Component, Input, OutputEmitterRef, output } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, OutputEmitterRef, output } from '@angular/core';
 import { CdkDrag, CdkDragHandle } from '@angular/cdk/drag-drop';
 import { TranslateModule } from '@ngx-translate/core';
 
@@ -8,6 +8,7 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrls: ['./widget.component.scss'],
   standalone: true,
   imports: [CdkDrag, CdkDragHandle, TranslateModule],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class WidgetComponent {
   @Input() public title!: string;

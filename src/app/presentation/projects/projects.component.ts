@@ -1,4 +1,4 @@
-import { Component, OnInit, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit, signal } from '@angular/core';
 import { Project } from '../common/entities/project-entity';
 import config from './../../../assets/config.json';
 import { TitleService } from '../services/title.service';
@@ -11,6 +11,7 @@ import { ProjectTileComponent } from './project-tile/project-tile/project-tile.c
   styleUrls: ['./projects.component.scss'],
   standalone: true,
   imports: [TranslateModule, ProjectTileComponent],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ProjectsComponent implements OnInit {
   public tileData = signal<Project[]>([]);

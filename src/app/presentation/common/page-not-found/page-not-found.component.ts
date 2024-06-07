@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
@@ -7,6 +7,7 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrls: ['./page-not-found.component.sass'],
   standalone: true,
   imports: [TranslateModule],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PageNotFoundComponent implements OnInit {
 

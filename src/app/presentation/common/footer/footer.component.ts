@@ -1,5 +1,5 @@
 import { DatePipe } from '@angular/common';
-import { Component, OnInit, OutputEmitterRef, output } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit, OutputEmitterRef, output } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
@@ -8,6 +8,7 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrls: ['./footer.component.scss'],
   standalone: true,
   imports: [TranslateModule, DatePipe],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class FooterComponent implements OnInit {
   public menu: boolean = false;

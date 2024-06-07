@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
@@ -8,6 +8,7 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   styleUrls: ['./nav.component.scss'],
   standalone: true,
   imports: [TranslateModule, RouterModule],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class NavComponent {
   public title: string = 'mia coupland';

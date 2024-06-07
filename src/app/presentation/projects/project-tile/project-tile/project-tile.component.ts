@@ -1,4 +1,4 @@
-import { Component, OnChanges } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnChanges } from '@angular/core';
 import { Input } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 
@@ -8,6 +8,7 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrls: ['./project-tile.component.sass'],
   standalone: true,
   imports: [TranslateModule],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ProjectTileComponent implements OnChanges {
   @Input() public tileData: any;
