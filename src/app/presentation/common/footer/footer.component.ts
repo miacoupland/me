@@ -10,7 +10,7 @@ import { TranslateModule } from '@ngx-translate/core';
   imports: [TranslateModule, DatePipe],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class FooterComponent implements OnInit {
+export class FooterComponent {
   public menu: boolean = false;
   public dateTime: Date;
 
@@ -22,8 +22,6 @@ export class FooterComponent implements OnInit {
   constructor() {
     this.dateTime = new Date();
   }
-
-  ngOnInit(): void {}
 
   public toggleMenu(): void {
     this.menu = !this.menu;
