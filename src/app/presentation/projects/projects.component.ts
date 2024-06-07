@@ -1,4 +1,10 @@
-import { ChangeDetectionStrategy, Component, OnInit, signal } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  ChangeDetectorRef,
+  Component,
+  OnInit,
+  signal,
+} from '@angular/core';
 import { Project } from '../common/entities/project-entity';
 import config from './../../../assets/config.json';
 import { TitleService } from '../services/title.service';
@@ -18,12 +24,15 @@ export class ProjectsComponent implements OnInit {
 
   public project!: Project;
 
-  constructor(private titleService: TitleService) {
-    this.tileData.set(Object.values(config.projects));
-  }
+  constructor(
+    private titleService: TitleService,
+    private cdRef: ChangeDetectorRef
+  ) {}
 
   public ngOnInit(): void {
+    this.tileData.set(Object.values(config.projects));
     this.titleService.setTitle('common.projects');
+    this.cdRef.markForCheck();
   }
 
   public showProject(project: Project): void {

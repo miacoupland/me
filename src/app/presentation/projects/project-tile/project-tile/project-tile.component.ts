@@ -1,6 +1,6 @@
-import { ChangeDetectionStrategy, Component, OnChanges } from '@angular/core';
-import { Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnChanges, Signal, input } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
+import { Project } from 'src/app/presentation/common/entities/project-entity';
 
 @Component({
   selector: 'app-project-tile',
@@ -10,19 +10,8 @@ import { TranslateModule } from '@ngx-translate/core';
   imports: [TranslateModule],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ProjectTileComponent implements OnChanges {
-  @Input() public tileData: any;
-  public key: string = '';
-  public name: string = '';
-  public imageSrc: string = '';
-  public githubLink: string = '';
+export class ProjectTileComponent {
+  public tileData: Signal<Project> = input<Project>();
 
   constructor() {}
-
-  public ngOnChanges() {
-    this.key = this.tileData.key;
-    this.name = this.tileData.name;
-    this.imageSrc = this.tileData.imageSrc;
-    this.githubLink = this.tileData.githubLink;
-  }
 }
