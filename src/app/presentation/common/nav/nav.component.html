@@ -28,13 +28,14 @@
       (change)="translate.use(langSelect.value)"
       class="text-black m-0.5 border border-indigo-500"
     >
+      @for (lang of translate.getLangs(); track $index) {
       <option
-        *ngFor="let lang of translate.getLangs()"
         [value]="lang"
         [selected]="lang === translate.currentLang"
         class="text-indigo-500 m-0.5"
       >
         {{ lang }}
       </option>
+      }
     </select>
 </div>

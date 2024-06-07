@@ -1,25 +1,24 @@
-import { Component, OnInit } from '@angular/core';
-import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
-import { Observable, of } from 'rxjs';
+import { Component, OnInit, signal } from '@angular/core';
 import { Project } from '../common/entities/project-entity';
 import config from './../../../assets/config.json';
 import { TitleService } from '../services/title.service';
+import { TranslateModule } from '@ngx-translate/core';
+import { ProjectTileComponent } from './project-tile/project-tile/project-tile.component';
 
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss'],
+  standalone: true,
+  imports: [TranslateModule, ProjectTileComponent],
 })
 export class ProjectsComponent implements OnInit {
-  public tileData: Observable<Project[]> = of(Object.values(config.projects));
+  public tileData = signal<Project[]>([]);
 
   public project!: Project;
 
   constructor(private titleService: TitleService) {
-    this.tileData.pipe(takeUntilDestroyed()).subscribe((value) => {
-      this.project = value[0]
-      return [value[0], value[1]];
-    });
+    this.tileData.set(Object.values(config.projects));
   }
 
   public ngOnInit(): void {

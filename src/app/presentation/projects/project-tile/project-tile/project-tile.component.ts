@@ -1,10 +1,13 @@
 import { Component, OnChanges } from '@angular/core';
 import { Input } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-project-tile',
   templateUrl: './project-tile.component.html',
   styleUrls: ['./project-tile.component.sass'],
+  standalone: true,
+  imports: [TranslateModule],
 })
 export class ProjectTileComponent implements OnChanges {
   @Input() public tileData: any;

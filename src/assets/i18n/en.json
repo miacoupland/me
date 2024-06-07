@@ -24,14 +24,15 @@
   },
   "contact": {
     "contact-text": "You can contact me using the form below, or message me on",
+    "email": "Email:",
     "full-name": "Full name:",
     "subject": "Subject:",
     "message": "Message:",
     "submit": "Submit"
   },
   "footer": {
-    "description": "",
-    "last-modified": "Last modified: 2022-07-09 Mia Coupland"
+    "description": "The colour of the clouds and sky change depending on the time of day that you view my website.",
+    "last-modified": "Last modified: 2023-02-12 Mia Coupland"
   },
   "projects": {
     "more": "to view my Github profile. See below for some examples.",

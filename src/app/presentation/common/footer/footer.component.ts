@@ -1,9 +1,12 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
-  styleUrls: [],
+  styleUrls: ['./footer.component.scss'],
+  standalone: true,
+  imports: [TranslateModule],
 })
 export class FooterComponent implements OnInit {
   public menu: boolean = false;

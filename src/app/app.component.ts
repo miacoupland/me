@@ -5,14 +5,19 @@ import {
   OnInit,
   inject,
 } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { TitleService } from './presentation/services/title.service';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+import { FooterComponent } from './presentation/common/footer/footer.component';
+import { NavComponent } from './presentation/common/nav/nav.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
+  standalone: true,
+  imports: [NavComponent, FooterComponent, TranslateModule, RouterModule],
 })
 export class AppComponent implements OnInit {
   public title: string = 'mia coupland';
