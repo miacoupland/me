@@ -1,23 +1,29 @@
-import {
-  ChangeDetectorRef,
-  Component,
-  DestroyRef,
-  OnInit,
-  inject,
-} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { TitleService } from './presentation/services/title.service';
-import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { FooterComponent } from './presentation/common/footer/footer.component';
 import { NavComponent } from './presentation/common/nav/nav.component';
 import { RouterModule } from '@angular/router';
+import { WidgetComponent } from './presentation/common/widget/widget.component';
+import { ProjectsComponent } from './presentation/projects/projects.component';
+import { ContactComponent } from './presentation/contact/contact.component';
+import { BioComponent } from './presentation/bio/bio.component';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   standalone: true,
-  imports: [NavComponent, FooterComponent, TranslateModule, RouterModule],
+  imports: [
+    NavComponent,
+    FooterComponent,
+    TranslateModule,
+    RouterModule,
+    WidgetComponent,
+    ProjectsComponent,
+    ContactComponent,
+    BioComponent,
+  ],
 })
 export class AppComponent implements OnInit {
   public title: string = 'mia coupland';
@@ -25,12 +31,9 @@ export class AppComponent implements OnInit {
   public contact: boolean = false;
   public bio: boolean = false;
 
-  private _destroyRef = inject(DestroyRef);
-
   constructor(
     private translate: TranslateService,
-    private titleService: TitleService,
-    private cdRef: ChangeDetectorRef
+    private titleService: TitleService
   ) {
     translate.addLangs(['en', 'eo']);
     translate.setDefaultLang('en');
@@ -39,12 +42,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.titleService.title$
-      .pipe(takeUntilDestroyed(this._destroyRef))
-      .subscribe((title) => {
-        this.title = title;
-        this.cdRef.detectChanges();
-      });
+    this.title = this.titleService.title;
   }
 
   public showProjects(s: boolean): void {

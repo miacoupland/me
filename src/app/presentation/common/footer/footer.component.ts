@@ -1,4 +1,5 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { DatePipe } from '@angular/common';
+import { Component, OnInit, OutputEmitterRef, output } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
@@ -6,15 +7,15 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss'],
   standalone: true,
-  imports: [TranslateModule],
+  imports: [TranslateModule, DatePipe],
 })
 export class FooterComponent implements OnInit {
   public menu: boolean = false;
   public dateTime: Date;
 
-  @Output() public projectsChange: EventEmitter<boolean> = new EventEmitter<boolean>();
-  @Output() public bioChange: EventEmitter<boolean> = new EventEmitter<boolean>();
-  @Output() public contactChange: EventEmitter<boolean> = new EventEmitter<boolean>();
+  public projectsChange: OutputEmitterRef<boolean> = output<boolean>();
+  public bioChange: OutputEmitterRef<boolean> = output<boolean>();
+  public contactChange: OutputEmitterRef<boolean> = output<boolean>();
 
 
   constructor() {
@@ -28,14 +29,14 @@ export class FooterComponent implements OnInit {
   }
 
   public showProjects(): void {
-    this.projectsChange.next(true);
+    this.projectsChange.emit(true);
   }
 
   public showBio(): void {
-    this.bioChange.next(true);
+    this.bioChange.emit(true);
   }
 
   public showContact(): void {
-    this.contactChange.next(true);
+    this.contactChange.emit(true);
   }
 }
